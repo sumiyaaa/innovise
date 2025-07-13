@@ -1,32 +1,123 @@
 // components/about/AboutHero.jsx
-import styles from './AboutHero.module.css';
+// import styles from './AboutHero.module.css';
+
+// export default function AboutHero() {
+//   return (
+//     <section className={styles.hero}>
+//       <div className={styles.container}>
+//         <div className={styles.content}>
+//           <h2 className={styles.title}>
+//             About Innovise
+//           </h2>
+//           <p className={styles.subtitle}>
+//             We're transforming businesses with intelligent ServiceNow solutions
+//           </p>
+//           <div className={styles.description}>
+//             <p>
+//               Founded in 2015, Innovise has been at the forefront of digital transformation, 
+//               helping enterprises streamline operations and accelerate growth through our 
+//               ServiceNow expertise.
+//             </p>
+//             <p>
+//               Our team of certified experts combines technical excellence with business 
+//               acumen to deliver solutions that drive real results.
+//             </p>
+//           </div>
+//         </div>
+//         <div className={styles.imageContainer}>
+//           <div className={styles.gridOverlay}></div>
+//           <div className={styles.globeAnimation}></div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// components/about/AboutHero.jsx
+"use client"; // Mark as a client component
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function AboutHero() {
+  // Animation variants for staggered appearance
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Stagger children animations by 0.1 seconds
+        delayChildren: 0.3,   // Delay start of children animations
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  // Globe animation properties
+  const globePulse = {
+    scale: [1, 1.1, 1], // Scale from 1 to 1.1 and back
+    opacity: [0.2, 0.3, 0.2], // Opacity from 0.2 to 0.3 and back
+    transition: {
+      duration: 6,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "mirror", // Make the animation loop smoothly back and forth
+    },
+  };
+
+  const primaryColor = '#8CC63F'; // Define your primary color here for easy updates
+
   return (
-    <section className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.content}>
-          <h2 className={styles.title}>
+    <section className="relative overflow-hidden py-36 px-5 sm:px-10 bg-[#0d0c11] text-white min-h-[70vh] flex items-center">
+      <div className="max-w-[1300px] mx-auto w-full flex flex-col lg:flex-row items-center gap-16 lg:gap-10">
+        {/* Content Section */}
+        <motion.div
+          className="flex-1"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.h2 className="text-5xl md:text-6xl font-extrabold mb-5 relative" variants={itemVariants}>
             About Innovise
-          </h2>
-          <p className={styles.subtitle}>
+            {/* Sup tag for styling if needed, but not directly used in the provided text */}
+            {/* <sup className="text-lg relative -top-4" style={{ color: primaryColor }}>™</sup> */}
+          </motion.h2>
+
+          <motion.p className="text-2xl text-gray-400 mb-8 max-w-xl" variants={itemVariants}>
             We're transforming businesses with intelligent ServiceNow solutions
-          </p>
-          <div className={styles.description}>
-            <p>
-              Founded in 2015, Innovise has been at the forefront of digital transformation, 
-              helping enterprises streamline operations and accelerate growth through our 
+          </motion.p>
+
+          <div className="flex flex-col gap-5">
+            <motion.p className="text-lg leading-relaxed max-w-xl text-white" variants={itemVariants}>
+              Founded in 2015, Innovise has been at the forefront of digital transformation,
+              helping enterprises streamline operations and accelerate growth through our
               ServiceNow expertise.
-            </p>
-            <p>
-              Our team of certified experts combines technical excellence with business 
+            </motion.p>
+            <motion.p className="text-lg leading-relaxed max-w-xl text-white" variants={itemVariants}>
+              Our team of certified experts combines technical excellence with business
               acumen to deliver solutions that drive real results.
-            </p>
+            </motion.p>
           </div>
-        </div>
-        <div className={styles.imageContainer}>
-          <div className={styles.gridOverlay}></div>
-          <div className={styles.globeAnimation}></div>
+        </motion.div>
+
+        {/* Image/Animation Section */}
+        <div className="flex-1 relative min-h-[300px] w-full lg:min-h-[400px] flex items-center justify-center">
+          <div
+            className="absolute inset-0 z-10 rounded-xl overflow-hidden"
+            style={{
+              background: `linear-gradient(90deg, transparent 24px, rgba(255,255,255,0.03) 25px), linear-gradient(transparent 24px, rgba(255,255,255,0.03) 25px)`,
+              backgroundSize: '25px 25px',
+            }}
+          ></div>
+          <motion.div
+            className="absolute w-[300px] h-[300px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
+            style={{ background: `radial-gradient(circle, ${primaryColor} 0%, transparent 70%)` }}
+            animate={globePulse} // Apply the continuous pulse animation
+          ></motion.div>
         </div>
       </div>
     </section>
