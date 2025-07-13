@@ -1,0 +1,91 @@
+/* components/about/ValuesSection.module.css */
+.values {
+  padding: 100px 5%;
+  background-color: #1a1825;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.valueCard {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 30px;
+  border-left: 4px solid var(--accent);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.valueCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-10px);
+}
+
+.valueCard:hover::before {
+  transform: translateY(0);
+}
+
+.valueNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  line-height: 1;
+}
+
+.valueTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.valueDescription {
+  color: #a0aec0;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

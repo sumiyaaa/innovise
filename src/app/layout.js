@@ -1,6 +1,9 @@
 // src/app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+import Menu from "@/components/menu/Menu.js";
+
 // import Navbar from "../components/Navbar/Navbar";
 import Navbar from "../components/Navbar/Nabbar";
 
@@ -22,6 +25,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <Navbar />
+        {/* <Menu/> */}
         {children}
       </body>
     </html>

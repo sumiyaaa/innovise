@@ -1,0 +1,177 @@
+/* HeroSection.module.css */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  /* background-color: #0d0c11; */
+  position: relative;
+  z-index: 1;
+}
+
+.innerContainer {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.textContent {
+  flex: 1;
+  color: white;
+  text-align: left;
+  max-width: 55%;
+}
+
+.textContent p {
+  font-size: 1.25rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.textContent h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 40px;
+  letter-spacing: -0.03em;
+}
+
+.textContent h2 span {
+  color: #8CC63F;
+}
+
+.textContent button {
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0d0c11;
+  background-color: #8CC63F;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.textContent button:hover {
+  background-color: #8CC63F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 153, 0.4);
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.circle {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #8CC63F 0%, #8CC63F 40%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(40px);
+  z-index: 1;
+}
+
+.imagePlaceholder {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(45deg, #2d2b38, #3a3847);
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .textContent h1 {
+    font-size: 2.8rem;
+  }
+  
+  .imageContainer {
+    min-height: 400px;
+  }
+  
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .imagePlaceholder {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .innerContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .textContent {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .textContent p {
+    margin: 0 auto 25px;
+    max-width: 90%;
+  }
+  
+  .textContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .imageContainer {
+    min-height: 350px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 5%;
+  }
+  
+  .textContent h1 {
+    font-size: 2rem;
+  }
+  
+  .textContent p {
+    font-size: 1rem;
+  }
+  
+  .textContent button {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    filter: blur(30px);
+  }
+  
+  .imagePlaceholder {
+    width: 240px;
+    height: 240px;
+  }
+}

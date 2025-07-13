@@ -1,0 +1,216 @@
+.footer {
+  background-color: #0d0c11;
+  color: #fff;
+  padding: 80px 5% 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.brandInfo {
+  flex: 1;
+  min-width: 300px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00FF99;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  margin-bottom: 30px;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.socialLinks a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  color: #a0aec0;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  background: #00FF99;
+  color: #0d0c11;
+  transform: translateY(-3px);
+}
+
+.footerLinks {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.linkColumn {
+  min-width: 150px;
+}
+
+.columnTitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.columnTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #00FF99;
+}
+
+.linkColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkColumn li {
+  margin-bottom: 15px;
+}
+
+.linkColumn a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.linkColumn a:hover {
+  color: #00FF99;
+}
+
+.newsletter {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newsletter p {
+  color: #a0aec0;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.emailInput {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: #00FF99;
+}
+
+.subscribeButton {
+  padding: 14px 30px;
+  background: #00FF99;
+  color: #0d0c11;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.subscribeButton:hover {
+  background: #00E68A;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 153, 0.3);
+}
+
+.footerBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.copyright {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.legalLinks a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.legalLinks a:hover {
+  color: #00FF99;
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footerLinks {
+    width: 100%;
+  }
+  
+  .footerBottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .legalLinks {
+    justify-content: center;
+  }
+}

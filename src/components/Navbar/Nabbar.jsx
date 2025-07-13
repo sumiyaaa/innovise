@@ -22,10 +22,10 @@ const Navbar = () => {
   const menuRef = useRef(null);
 
   const navLinks = [
-    {name : "Home", href: "/home"},
+    {name : "Home", href: "/"},
     { name: "About Us", href: "/about-us" },
-    // { name: "Products", href: "/products" },
-    // { name: "Renewable Energy", href: "/renewable-energy" },
+    { name: "Services", href: "/services" },
+    { name: "Solutions", href: "/solutions" },
     { name: "Contact Us", href: "/contact-us" },
     // { name: "Order", href: "/order" },
   ];
@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav className="bg-black shadow-md text-white relative z-50">
+      <nav className="bg-[#0c1525] shadow-md text-white relative z-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           <a href="/" className="flex items-center gap-2 cursor-pointer">
             <img
@@ -81,7 +81,7 @@ const Navbar = () => {
               className="h-20 w-auto"
             />
             <div className="leading-tight">
-              <h1 className="text-xl font-bold text-black">Innovice</h1>
+              {/* <h1 className="text-xl font-bold text-black">Innovice</h1> */}
               <p className="text-sm text-gray-700">
                 {/* Clean and Cost-Effective Energy Solution */}
               </p>

@@ -1,48 +1,30 @@
-"use client";
+// HeroSection.jsx
+import React from 'react';
+import styles from './HeroSection.module.css';
+import Image from 'next/image';
+// import hero from '../../../public/images/hero.png'
 
-import React, { useState } from "react";
-import {
-  FaPhoneAlt,
-  FaLinkedinIn,
-  FaFacebookF,
-  FaInstagram,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
-
-
-const HeroSection = () => {
+export default function HeroSection() {
   return (
-    <section className="relative h-[70vh] sm:h-[80vh] md:h-[90vh] w-full overflow-hidden">
-      {/* <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      >
-        <source
-          src="https://bioenergyeurope.org/wp-content/uploads/2024/11/Video_header_website.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video> */}
-
-      {/* Dark overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-0" />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 md:px-8 lg:px-12">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight">
-          Welcome To Innovice
-        </h1>
-        <p className="text-blue-300 text-base sm:text-lg md:text-xl mt-4 max-w-3xl">
-          
-Transforming Enterprise Workflows with Innovative ServiceNow Solutions Across All Domains
-        </p>
+    <section className={styles.hero}>
+      <div className={styles.innerContainer}>
+        <div className={styles.textContent}>
+          <p>
+            At Innovise, we deliver modern IT solutions using ServiceNow to help businesses streamline
+            workflows, automate operations, and grow smarter.
+          </p>
+          <h2>
+            Empowering Businesses <br />
+            with <span>Intelligent ServiceNow Solutions</span>
+          </h2>
+          <button>Get Started</button>
+        </div>
+        <div className={styles.imageContainer}>
+          <div className={styles.circle} />
+          {/* <Image src="hero.png" alt="AI Expert" className={styles.image} priority /> */}
+         
+        </div>
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}

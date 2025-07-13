@@ -1,0 +1,108 @@
+/* components/about/AboutHero.module.css */
+.hero {
+  padding: 200px 5% 90px;
+  background-color: #0d0c11;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.title sup {
+  font-size: 1.2rem;
+  position: relative;
+  top: -1em;
+  color: #00FF99;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 600px;
+  color: white;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+}
+
+.gridOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(90deg, transparent 24px, rgba(255,255,255,0.03) 25px),
+    linear-gradient(transparent 24px, rgba(255,255,255,0.03) 25px);
+  background-size: 25px 25px;
+  z-index: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.globeAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00FF99 0%, transparent 70%);
+  opacity: 0.2;
+  animation: pulse 6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    min-height: 300px;
+  }
+}

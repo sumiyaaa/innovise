@@ -1,0 +1,97 @@
+/* components/about/MissionSection.module.css */
+.mission {
+  padding: 100px 5%;
+  background: linear-gradient(to bottom, #0d0c11, #1a1825);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #00FF99;
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+.missionStatement {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 70px;
+  line-height: 1.6;
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+.goals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.goalCard {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goalCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 255, 153, 0.2);
+}
+
+.goalCard h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 15px;
+  color: #00FF99;
+}
+
+.goalCard p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #a0aec0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 255, 153, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00FF99;
+}
+
+@media (max-width: 768px) {
+  .missionStatement {
+    font-size: 1.3rem;
+  }
+  
+  .goalCard {
+    min-width: 100%;
+  }
+}
