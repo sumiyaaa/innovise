@@ -39,7 +39,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import Image from "next/image";
 
-//import hero from "../../../public/images/hero.png";
+import hero from "../../../public/images/hero.png";
 
 // ✅ You need to import motion from framer-motion
 import { motion } from "framer-motion";
@@ -134,7 +134,16 @@ export default function HeroSection() {
           {/* Image Section */}
           <div className={styles.imageContainer}>
             <div className={styles.circle} />
-            <Image src={""} alt="AI Expert" className={styles.image} priority />
+            {/* <Image src={"hero"} alt="AI Expert" className={styles.image} priority /> */}
+            <Image
+  src="/images/hero.png" // path inside /public folder
+  alt="AI Expert"
+  width={500}            // provide actual image width
+  height={500}           // provide actual image height
+  className={styles.image}
+  priority
+/>
+
           </div>
         </div>
       </div>

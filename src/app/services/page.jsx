@@ -124,7 +124,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <section className="bg-[#0d0c11] text-white py-20 min-h-screen">
+      <section className="bg-[#0c1525] text-white py-20 min-h-screen">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: -50 }}

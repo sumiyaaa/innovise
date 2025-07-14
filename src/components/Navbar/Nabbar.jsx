@@ -27,7 +27,7 @@ const Navbar = () => {
     { name: "Services", href: "/services" },
     { name: "Solutions", href: "/solutions" },
     { name: "Contact Us", href: "/contact-us" },
-    // { name: "Order", href: "/order" },
+    
   ];
 
   useEffect(() => {
@@ -154,3 +154,12 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
+
