@@ -28,7 +28,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #00FF99;
+  color: #8CC63F;
 }
 
 .tagline {
@@ -57,7 +57,7 @@
 }
 
 .socialLinks a:hover {
-  background: #00FF99;
+  background: #8CC63F;
   color: #0d0c11;
   transform: translateY(-3px);
 }
@@ -87,7 +87,7 @@
   bottom: 0;
   width: 40px;
   height: 2px;
-  background: #00FF99;
+  background: #8CC63F;
 }
 
 .linkColumn ul {
@@ -108,7 +108,7 @@
 }
 
 .linkColumn a:hover {
-  color: #00FF99;
+  color: #8CC63F;
 }
 
 .newsletter {
@@ -143,12 +143,12 @@
 
 .emailInput:focus {
   outline: none;
-  border-color: #00FF99;
+  border-color: #8CC63F;
 }
 
 .subscribeButton {
   padding: 14px 30px;
-  background: #00FF99;
+  background: #8CC63F;
   color: #0d0c11;
   border: none;
   border-radius: 8px;
@@ -159,7 +159,7 @@
 }
 
 .subscribeButton:hover {
-  background: #00E68A;
+  background: #8CC63F;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 255, 153, 0.3);
 }
@@ -191,7 +191,7 @@
 }
 
 .legalLinks a:hover {
-  color: #00FF99;
+  color: #8CC63F;
 }
 
 @media (max-width: 768px) {

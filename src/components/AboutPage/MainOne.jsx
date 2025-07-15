@@ -60,7 +60,7 @@ export default function AboutHero() {
 
           <div className="flex flex-col gap-5">
             <motion.p className="text-lg leading-relaxed max-w-xl text-white" variants={itemVariants}>
-              Founded in 2015, Innovise has been at the forefront of digital transformation,
+              Founded in 2022, Innovise has been at the forefront of digital transformation,
               helping enterprises streamline operations and accelerate growth through our
               ServiceNow expertise.
             </motion.p>

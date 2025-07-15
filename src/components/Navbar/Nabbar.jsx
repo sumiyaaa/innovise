@@ -54,7 +54,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full">
-      <div className="bg-[#0c1525] text-white text-sm flex justify-between items-center px-4 md:px-8 py-2">
+      {/* <div className="bg-[#0c1525] text-white text-sm flex justify-between items-center px-4 md:px-8 py-2">
         <div className="flex items-center space-x-2">
           <FaPhoneAlt />
           <span>+92 0000000000</span>
@@ -70,7 +70,7 @@ const Navbar = () => {
             <FaInstagram />
           </a>
         </div>
-      </div>
+      </div> */}
 
       <nav className="bg-[#0c1525] shadow-md text-white relative z-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
@@ -83,7 +83,7 @@ const Navbar = () => {
             <div className="leading-tight">
               {/* <h1 className="text-xl font-bold text-black">Innovice</h1> */}
               <p className="text-sm text-gray-700">
-                {/* Clean and Cost-Effective Energy Solution */}
+              
               </p>
             </div>
           </a>

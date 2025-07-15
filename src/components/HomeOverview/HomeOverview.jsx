@@ -1,0 +1,75 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+export default function CompanyOverview() {
+  return (
+    <section className="py-16 px-4 bg-[#0d0c11] text-white flex justify-center items-center">
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* First Card - Who We Are */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="text-center border border-transparent rounded-3xl p-10 bg-gradient-to-br from-[#1a1a2e] to-[#0f0f1a] hover:border-[#8CC63F] transition-all duration-500 shadow-xl hover:shadow-[0_0_50px_#8CC63F88]"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-[#8CC63F]">
+            Who We Are
+          </h2>
+          <p className="text-lg leading-8 text-gray-300 hover:text-white transition-all duration-300">
+            <span className="font-semibold text-white">Innovise</span> is a future-driven technology company focused on delivering <span className="text-[#8CC63F] font-semibold">AI-powered solutions</span>, <span className="text-[#8CC63F] font-semibold">IT automation</span>, and <span className="text-[#8CC63F] font-semibold">intelligent business tools</span> that help enterprises transform, scale, and succeed in the digital era.
+          </p>
+        </motion.div>
+
+        {/* Second Card - What We Do */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true }}
+          className="text-center border border-transparent rounded-3xl p-10 bg-gradient-to-br from-[#1a1a2e] to-[#0f0f1a] hover:border-[#8CC63F] transition-all duration-500 shadow-xl hover:shadow-[0_0_50px_#8CC63F88]"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-[#8CC63F]">
+            What We Do
+          </h2>
+          <p className="text-lg leading-8 text-gray-300 hover:text-white transition-all duration-300">
+            We offer cutting-edge solutions in <span className="text-[#8CC63F] font-semibold">software development</span>, <span className="text-[#8CC63F] font-semibold">custom AI integration</span>, <span className="text-[#8CC63F] font-semibold">cloud optimization</span>, and <span className="text-[#8CC63F] font-semibold">digital transformation consulting</span>. Our mission is to empower businesses with smart, scalable, and sustainable technology.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+// 'use client';
+
+// import { motion } from 'framer-motion';
+
+// export default function CompanyOverview() {
+//   return (
+//     <section className="py-16 px-4 bg-[#0d0c11] text-white min-h-[60vh] flex items-center justify-center">
+//       <motion.div
+//         initial={{ opacity: 0, y: 40 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.6, ease: 'easeOut' }}
+//         viewport={{ once: true }}
+//         className="max-w-4xl text-center border border-transparent rounded-3xl p-10 bg-gradient-to-br from-[#1a1a2e] to-[#0f0f1a] hover:border-[#8CC63F] transition-all duration-500 shadow-xl hover:shadow-[0_0_50px_#8CC63F88]"
+//       >
+//         <h2 className="text-4xl font-bold mb-6 text-[#8CC63F]">
+//           Who We Are
+//         </h2>
+//         <p className="text-lg leading-8 text-gray-300 hover:text-white transition-all duration-300">
+//           <span className="font-semibold text-white">Innovise</span> is a future-driven technology company focused on delivering <span className="text-[#8CC63F] font-semibold">AI-powered solutions</span>, <span className="text-[#8CC63F] font-semibold">IT automation</span>, and <span className="text-[#8CC63F] font-semibold">intelligent business tools</span> that help enterprises transform, scale, and succeed in the digital era.
+//         </p>
+//       </motion.div>
+//     </section>
+//   );
+// }

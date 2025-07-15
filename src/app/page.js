@@ -3,6 +3,8 @@ import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import HeroSection from "@/components/HeroSection/HeroSection";
 // import HeroSection from "@/components/HeroSection/HeroSection";
+import HomeOverview from "@/components/HomeOverview/HomeOverview"
+import Footer from "@/components/AboutPage/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       {/* Particles Background */}
       <ParticlesBackground />
       <HeroSection/>
+      <HomeOverview/>
+      <Footer/>
 
    
 

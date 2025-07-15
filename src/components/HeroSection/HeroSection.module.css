@@ -73,7 +73,7 @@
   min-height: 500px;
 }
 
-.circle {
+/* .circle {
   position: absolute;
   width: 380px;
   height: 380px;
@@ -82,8 +82,38 @@
   opacity: 0.8;
   filter: blur(40px);
   z-index: 1;
+} */
+.circle {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #8CC63F 0%, #8CC63F 40%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(40px);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
+/* Add hover effect to parent container */
+/* .imageContainer:hover .circle {
+  opacity: 0.7;
+  filter: blur(80px);
+  transform: scale(1.2);
+} */
+.image {
+  border-radius: 50%; /* or remove if your image is square */
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease;
+  z-index: 2;
+}
+.imageContainer:hover .image {
+  box-shadow:
+    0 0 30px 10px rgba(140, 198, 63, 0.4),  /* Top glow */
+    0 0 30px 10px rgba(140, 198, 63, 0.4),  /* Bottom glow */
+    0 0 30px 10px rgba(140, 198, 63, 0.4),  /* Left glow */
+    0 0 30px 10px rgba(140, 198, 63, 0.4);  /* Right glow */
+  transform: scale(1.02); /* Optional slight zoom */
+}
 .imagePlaceholder {
   width: 350px;
   height: 350px;
