@@ -1,42 +1,10 @@
-// components/about/AboutHero.jsx
-// import styles from './AboutHero.module.css';
 
-// export default function AboutHero() {
-//   return (
-//     <section className={styles.hero}>
-//       <div className={styles.container}>
-//         <div className={styles.content}>
-//           <h2 className={styles.title}>
-//             About Innovise
-//           </h2>
-//           <p className={styles.subtitle}>
-//             We're transforming businesses with intelligent ServiceNow solutions
-//           </p>
-//           <div className={styles.description}>
-//             <p>
-//               Founded in 2015, Innovise has been at the forefront of digital transformation, 
-//               helping enterprises streamline operations and accelerate growth through our 
-//               ServiceNow expertise.
-//             </p>
-//             <p>
-//               Our team of certified experts combines technical excellence with business 
-//               acumen to deliver solutions that drive real results.
-//             </p>
-//           </div>
-//         </div>
-//         <div className={styles.imageContainer}>
-//           <div className={styles.gridOverlay}></div>
-//           <div className={styles.globeAnimation}></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 // components/about/AboutHero.jsx
 "use client"; // Mark as a client component
 import React from 'react';
 import { motion } from 'framer-motion';
+// import AboutHero from 
 
 export default function AboutHero() {
   // Animation variants for staggered appearance
@@ -81,11 +49,10 @@ export default function AboutHero() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <motion.h2 className="text-5xl md:text-6xl font-extrabold mb-5 relative" variants={itemVariants}>
-            About Innovise
-            {/* Sup tag for styling if needed, but not directly used in the provided text */}
-            {/* <sup className="text-lg relative -top-4" style={{ color: primaryColor }}>™</sup> */}
-          </motion.h2>
+        <motion.h2 className="text-5xl md:text-6xl font-extrabold mb-5 relative" variants={itemVariants}>
+  About <span className="text-[#8CC63F]">Innovise</span>
+</motion.h2>
+
 
           <motion.p className="text-2xl text-gray-400 mb-8 max-w-xl" variants={itemVariants}>
             We're transforming businesses with intelligent ServiceNow solutions
@@ -118,6 +85,13 @@ export default function AboutHero() {
             style={{ background: `radial-gradient(circle, ${primaryColor} 0%, transparent 70%)` }}
             animate={globePulse} // Apply the continuous pulse animation
           ></motion.div>
+           <img
+    src="/images/aboutHero.png" // 🔄 Replace with your image path
+    alt="About Innovise"
+  // className="relative z-30 w-[450px] h-[450px] object-cover rounded-full shadow-lg"
+   className="relative z-30 w-[450px] h-[450px] object-cover rounded-full shadow-xl transition-transform duration-500 ease-in-out hover:scale-105  hover:shadow-[#8CC63F]/50 hover:shadow-2xl"
+   // className="relative z-30 w-[450px] h-[450px] object-cover rounded-full transition-transform duration-500 ease-in-out hover:scale-105 hover:ring-8 hover:ring-[#8CC63F]/50"
+  />
         </div>
       </div>
     </section>

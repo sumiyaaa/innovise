@@ -22,23 +22,24 @@ export default function ContactUs() {
     <>
    
 
-      {/* <section className="bg-[#0d0c11] text-white py-20 px-4 min-h-screen"> */}
-      <section
+      <section className="bg-[#0d0c11] text-white py-20 px-4 min-h-screen">
+      {/* <section
   className="text-white py-20 px-4 min-h-screen"
   style={{
     background: "linear-gradient(135deg, #0d0c11 0%, #1a1825 100%)",
   }}
->
+> */}
 
         <div className="max-w-4xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl font-bold text-center text-green-500 mb-10"
-          >
-            Contact Us
-          </motion.h2>
+         <motion.h2
+  initial={{ opacity: 0, y: -40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="text-4xl font-bold text-center text-[#8CC63F] mb-10"
+>
+  Contact Us
+</motion.h2>
+
 
           <motion.form
             initial={{ opacity: 0 }}
