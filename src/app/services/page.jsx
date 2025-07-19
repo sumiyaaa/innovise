@@ -18,6 +18,36 @@ export default function ServicesPage() {
         "Custom ServiceNow solutions, integrations, and automation tailored to your enterprise needs.",
     },
     {
+      title: "HRSD (Human Resource Service Delivery)",
+      description:
+        "Digitize and streamline HR services to provide a better employee experience with ServiceNow HRSD.",
+    },
+    {
+      title: "ITSM (IT Service Management)",
+      description:
+        "Deliver resilient IT services and manage incidents, changes, and problems efficiently with ServiceNow ITSM.",
+    },
+    {
+      title: "SPM (Strategic Portfolio Management)",
+      description:
+        "Prioritize, plan, and deliver business value with ServiceNow Strategic Portfolio Management.",
+    },
+    {
+      title: "CSM (Customer Service Management)",
+      description:
+        "Empower your agents to resolve issues faster and improve customer satisfaction with ServiceNow CSM.",
+    },
+    {
+      title: "CIS-HR (Certified Implementation Specialist – HR)",
+      description:
+        "Certified implementation expertise for HR modules within ServiceNow for optimized onboarding and lifecycle processes.",
+    },
+    {
+      title: "CSA (Certified System Administrator)",
+      description:
+        "Expert configuration and administration of ServiceNow platforms by certified professionals.",
+    },
+    {
       title: "Cloud Solutions",
       description:
         "Enable scalable, secure, and cost-effective cloud environments with our cloud expertise.",
@@ -42,7 +72,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <section className="bg-[#0d0c11] text-white py-20 min-h-screen">
+      <section className="bg-[#f1faee] text-white py-20 min-h-screen">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: -50 }}

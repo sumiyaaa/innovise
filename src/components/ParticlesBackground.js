@@ -42,7 +42,8 @@ export default function ParticlesBackground() {
         zIndex: -1,
         top: 0,
         left: 0,
-        backgroundColor: "#0d0c11",
+        // backgroundColor: "#0d0c11",
+         backgroundColor: "#eefaf9",
       }}
     />
   );

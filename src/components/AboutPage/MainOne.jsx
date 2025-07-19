@@ -39,7 +39,7 @@ export default function AboutHero() {
   const primaryColor = '#8CC63F'; // Define your primary color here for easy updates
 
   return (
-    <section className="relative overflow-hidden py-36 px-5 sm:px-10 bg-[#0d0c11] text-white min-h-[70vh] flex items-center">
+    <section className="relative overflow-hidden py-36 px-5 sm:px-10 bg-[#f1faee] text-black min-h-[70vh] flex items-center">
       <div className="max-w-[1300px] mx-auto w-full flex flex-col lg:flex-row items-center gap-16 lg:gap-10">
         {/* Content Section */}
         <motion.div
@@ -59,12 +59,12 @@ export default function AboutHero() {
           </motion.p>
 
           <div className="flex flex-col gap-5">
-            <motion.p className="text-lg leading-relaxed max-w-xl text-white" variants={itemVariants}>
+            <motion.p className="text-lg leading-relaxed max-w-xl text-black" variants={itemVariants}>
               Founded in 2022, Innovise has been at the forefront of digital transformation,
               helping enterprises streamline operations and accelerate growth through our
               ServiceNow expertise.
             </motion.p>
-            <motion.p className="text-lg leading-relaxed max-w-xl text-white" variants={itemVariants}>
+            <motion.p className="text-lg leading-relaxed max-w-xl text-black" variants={itemVariants}>
               Our team of certified experts combines technical excellence with business
               acumen to deliver solutions that drive real results.
             </motion.p>

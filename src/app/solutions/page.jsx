@@ -96,35 +96,55 @@ export default function SolutionsPage() {
   const primaryColor = '#8CC63F'; // Define your primary brand color here
 
   const solutions = [
-    {
+     {
       title: "ServiceNow Integration",
       description:
-        "Seamlessly integrate ServiceNow with your internal systems for unified workflows and centralized data handling.",
+        "Seamlessly integrate ServiceNow with your internal systems to unify workflows and data handling across platforms.",
+    },
+    {
+      title: "HR Service Delivery (HRSD)",
+      description:
+        "Empower HR departments with automated onboarding, lifecycle events, and employee self-service using ServiceNow HRSD.",
+    },
+    {
+      title: "IT Service Management (ITSM)",
+      description:
+        "Streamline incident, problem, and change management with ServiceNow ITSM for resilient and scalable IT support.",
+    },
+    {
+      title: "Strategic Portfolio Management (SPM)",
+      description:
+        "Plan, prioritize, and execute business strategies efficiently using ServiceNow SPM and real-time insights.",
+    },
+    {
+      title: "Customer Service Management (CSM)",
+      description:
+        "Deliver proactive customer service with connected digital workflows that enhance customer experiences.",
     },
     {
       title: "Business Process Automation",
       description:
-        "Automate repetitive tasks across departments to improve operational efficiency and reduce costs.",
+        "Eliminate repetitive tasks across departments to increase agility and reduce operational costs.",
     },
     {
       title: "IT Operations Management",
       description:
-        "Enhance visibility, monitoring, and control over your IT infrastructure with intelligent operations solutions.",
-    },
-    {
-      title: "Digital Transformation",
-      description:
-      "Accelerate your digital journey with modern platforms, agile methods, and scalable tech.",
+        "Gain full visibility into your IT infrastructure with real-time monitoring, predictive AIOps, and intelligent alerts.",
     },
     {
       title: "Cloud & Infrastructure",
       description:
-        "Design and implement cloud-first infrastructure that is secure, scalable, and future-ready.",
+        "Design scalable and secure cloud-first environments integrated with ServiceNow for optimal operations.",
     },
     {
       title: "AI-Powered Insights",
       description:
-        "Leverage artificial intelligence to gain actionable insights and make informed decisions faster.",
+        "Use machine learning and AI with ServiceNow Predictive Intelligence to drive smarter, faster decisions.",
+    },
+    {
+      title: "Digital Transformation",
+      description:
+        "Modernize your enterprise with agile ServiceNow applications tailored to business-specific challenges.",
     },
   ];
 

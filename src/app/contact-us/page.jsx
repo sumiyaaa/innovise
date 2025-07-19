@@ -22,7 +22,7 @@ export default function ContactUs() {
     <>
    
 
-      <section className="bg-[#0d0c11] text-white py-20 px-4 min-h-screen">
+      <section className="bg-[#f1faee] text-white py-20 px-4 min-h-screen">
       {/* <section
   className="text-white py-20 px-4 min-h-screen"
   style={{
@@ -91,7 +91,7 @@ export default function ContactUs() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-green-600 hover:bg-green-700 transition-all text-white py-2 px-6 rounded-lg font-semibold"
+              className="bg-[#8CC63F] hover:bg-[#78b834] transition-all text-white py-2 px-6 rounded-lg font-semibold"
             >
               Send Message
             </motion.button>
