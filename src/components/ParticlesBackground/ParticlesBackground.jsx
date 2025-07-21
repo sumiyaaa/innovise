@@ -1,12 +1,13 @@
 "use client";
-import React, { useCallback } from "react";
+import React from "react";
+// import Particles from "react-tsparticles";
 import { Particles } from "@tsparticles/react";
-import { loadFull } from "@tsparticles/engine";
+import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
 
   return (
     <div
@@ -17,7 +18,7 @@ const ParticlesBackground = () => {
         top: 0,
         left: 0,
         zIndex: -1,
-        backgroundColor: "#ffffff", // White background
+        backgroundColor: "#ffffff", // ✅ White background
       }}
     >
       <Particles
@@ -37,9 +38,9 @@ const ParticlesBackground = () => {
             },
           },
           particles: {
-            color: { value: "#555555" },
+            color: { value: "#555555" }, // ✅ Dark gray particles
             links: {
-              color: "#555555",
+              color: "#555555", // ✅ Dark gray lines
               distance: 150,
               enable: true,
               opacity: 0.5,
