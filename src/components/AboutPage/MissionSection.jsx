@@ -1,9 +1,9 @@
 
 
-
 // "use client";
 // import React from "react";
 // import { motion } from "framer-motion";
+// import GreenBackground from "@/components/GreenBackground"; // make sure this path is correct
 
 // const cardVariants = {
 //   hidden: { opacity: 0, y: 40 },
@@ -31,9 +31,14 @@
 //   ];
 
 //   return (
-//     <section className="py-24 px-6 bg-gradient-to-b from-[#0d0c11] to-[#1a1825] text-white">
+//     <section className="relative py-24 px-6 text-white overflow-hidden">
+//       {/* 🟩 Green Background */}
+//       <div className="absolute inset-0 z-0">
+//         <GreenBackground />
+//       </div>
+
 //       <motion.div
-//         className="max-w-6xl mx-auto"
+//         className="relative z-10 max-w-6xl mx-auto"
 //         initial={{ opacity: 0, y: 40 }}
 //         animate={{ opacity: 1, y: 0 }}
 //         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -42,7 +47,7 @@
 //           <h2 className="text-4xl font-bold relative inline-block after:block after:w-20 after:h-1 after:bg-[#8CC63F] after:mx-auto after:mt-4">
 //             Our Mission
 //           </h2>
-//           <p className="text-lg md:text-xl mt-6 max-w-3xl mx-auto leading-relaxed text-gray-400 font-medium">
+//           <p className="text-lg md:text-xl mt-6 max-w-3xl mx-auto leading-relaxed text-gray-200 font-medium">
 //             To empower businesses with intelligent ServiceNow solutions that
 //             streamline workflows, automate operations, and enable smarter growth.
 //           </p>
@@ -57,15 +62,15 @@
 //               whileInView="visible"
 //               viewport={{ once: true }}
 //               variants={cardVariants}
-//               className="group bg-white/5 border border-white/10 hover:border-green-300/30 rounded-xl p-8 w-full max-w-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+//               className="group bg-white text-black border border-white/10 hover:border-[#8CC63F] rounded-xl p-8 w-full max-w-sm transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-2"
 //             >
-//               <div className="w-14 h-14 rounded-full bg-green-400/10 text-[#8CC63F] flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
+//               <div className="w-14 h-14 rounded-full bg-[#8CC63F]/20 text-[#8CC63F] flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
 //                 ✓
 //               </div>
-//               <h3 className="text-2xl font-semibold text-[#8CC63F] mb-3 group-hover:underline">
+//               <h3 className="text-2xl font-semibold text-[#0d0c11] mb-3 group-hover:text-[#8CC63F] transition-colors duration-300">
 //                 {goal.title}
 //               </h3>
-//               <p className="text-gray-300 text-base leading-relaxed">{goal.description}</p>
+//               <p className="text-gray-700 text-base leading-relaxed">{goal.description}</p>
 //             </motion.div>
 //           ))}
 //         </div>
@@ -73,6 +78,8 @@
 //     </section>
 //   );
 // }
+
+
 
 
 
@@ -138,7 +145,10 @@ export default function MissionSection() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={cardVariants}
-              className="group bg-white text-black border border-white/10 hover:border-[#8CC63F] rounded-xl p-8 w-full max-w-sm transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-2"
+              className="group bg-white text-black border border-white/10 hover:border-[#8CC63F] 
+                rounded-tl-3xl rounded-br-3xl 
+                p-8 w-full max-w-sm transition-all duration-300 
+                shadow-md hover:shadow-xl hover:-translate-y-2"
             >
               <div className="w-14 h-14 rounded-full bg-[#8CC63F]/20 text-[#8CC63F] flex items-center justify-center text-2xl font-bold mb-5 group-hover:scale-110 transition-transform">
                 ✓

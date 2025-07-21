@@ -307,12 +307,170 @@
 // export default Navbar;
 
 
+
+
+
+
+
+
+
+
+// 'use client';
+// import React, { useState, useEffect, useRef } from "react";
+// import {
+//   FaBars,
+//   FaTimes,
+// } from "react-icons/fa";
+// import { usePathname } from "next/navigation";
+// import { Poppins } from "next/font/google";
+// import { motion } from "framer-motion";
+// import GreenBackground from "@/components/GreenBackground";
+
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
+
+// const Navbar = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const pathname = usePathname();
+//   const menuRef = useRef(null);
+
+//   const navLinks = [
+//     { name: "Home", href: "/" },
+//     { name: "About Us", href: "/about-us" },
+//     { name: "Services", href: "/services" },
+//     { name: "Contact Us", href: "/contact-us" },
+//   ];
+
+//   useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (menuRef.current && !menuRef.current.contains(event.target)) {
+//         setMenuOpen(false);
+//       }
+//     };
+
+//     if (menuOpen) {
+//       document.addEventListener("mousedown", handleClickOutside);
+//     } else {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     }
+
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
+//   }, [menuOpen]);
+
+//   const handleLinkClick = () => setMenuOpen(false);
+
+//   return (
+//     <header className="w-full relative z-50">
+//       {/* ✅ Background with reduced opacity for light effect */}
+//       <div className="absolute inset-0 z-0 opacity-60">
+//         <GreenBackground />
+//         <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+//       </div>
+
+//       {/* ✅ Main Navbar */}
+//       <nav className="relative z-10 text-white">
+//         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+//           {/* 🔗 Logo */}
+//           <a href="/" className="flex items-center gap-2">
+//             <img
+//               src="/images/logo.png"
+//               alt="Pak Bioenergy"
+//               className="h-16 w-auto"
+//             />
+//           </a>
+
+//           {/* 🖥 Desktop Menu */}
+//           <ul
+//             className={`hidden md:flex space-x-8 text-base font-normal ${poppins.className}`}
+//           >
+//             {navLinks.map((link) => (
+//               <motion.li
+//                 key={link.href}
+//                 whileHover={{ scale: 1.1 }}
+//                 className="transition-all duration-300"
+//               >
+//                 <a
+//                   href={link.href}
+//                   className={`capitalize px-2 py-1 border-b-2 border-transparent hover:border-[#8CC63F] transition-all duration-300 ${
+//                     pathname === link.href ? "text-[#8CC63F]" : "text-white"
+//                   }`}
+//                 >
+//                   {link.name}
+//                 </a>
+//               </motion.li>
+//             ))}
+//           </ul>
+
+//           {/* 📱 Mobile Button */}
+//           <div className="md:hidden relative z-50">
+//             <button
+//               aria-label="Toggle menu"
+//               onClick={() => setMenuOpen(!menuOpen)}
+//               className="text-white hover:text-[#8CC63F] transition-colors"
+//             >
+//               {menuOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* 📱 Slide-in Mobile Menu */}
+//         <motion.div
+//           ref={menuRef}
+//           initial={{ x: "-100%" }}
+//           animate={{ x: menuOpen ? 0 : "-100%" }}
+//           transition={{ duration: 0.4 }}
+//           className="fixed top-0 left-0 h-full w-64 bg-[#113c22] shadow-lg z-40"
+//         >
+//           <ul
+//             className={`flex flex-col mt-20 px-6 space-y-6 font-medium ${poppins.className}`}
+//           >
+//             {navLinks.map((link) => (
+//               <li key={link.href}>
+//                 <a
+//                   href={link.href}
+//                   onClick={handleLinkClick}
+//                   className={`block capitalize text-lg transition-colors duration-300 ${
+//                     pathname === link.href ? "text-[#8CC63F]" : "text-white"
+//                   } hover:text-[#8CC63F]`}
+//                 >
+//                   {link.name}
+//                 </a>
+//               </li>
+//             ))}
+//           </ul>
+//         </motion.div>
+
+//         {/* 🔲 Blackish overlay behind mobile menu */}
+//         {menuOpen && (
+//           <div
+//             className="fixed inset-0 bg-black/40 z-30"
+//             onClick={() => setMenuOpen(false)}
+//           />
+//         )}
+//       </nav>
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
 'use client';
 import React, { useState, useEffect, useRef } from "react";
-import {
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { Poppins } from "next/font/google";
 import { motion } from "framer-motion";
@@ -357,13 +515,17 @@ const Navbar = () => {
 
   return (
     <header className="w-full relative z-50">
-      {/* ✅ Background with reduced opacity for light effect */}
-      <div className="absolute inset-0 z-0 opacity-60">
+      {/* ✅ Background */}
+      {/* <div className="absolute inset-0 z-0 opacity-60">
         <GreenBackground />
-        <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1f17] via-[#144c2e] to-[#0c1f17] backdrop-blur-md" />
+      </div> */}
+      <div className="absolute inset-0 z-0 opacity-60">
+       <GreenBackground />
+         <div className="absolute inset-0 bg-white/10 backdrop-blur-md" />
+       </div>
 
-      {/* ✅ Main Navbar */}
+      {/* ✅ Navbar */}
       <nav className="relative z-10 text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
           {/* 🔗 Logo */}
@@ -371,13 +533,13 @@ const Navbar = () => {
             <img
               src="/images/logo.png"
               alt="Pak Bioenergy"
-              className="h-16 w-auto"
+              className="h-20 w-auto" // ✅ Increased logo height
             />
           </a>
 
           {/* 🖥 Desktop Menu */}
           <ul
-            className={`hidden md:flex space-x-8 text-base font-normal ${poppins.className}`}
+            className={`hidden md:flex space-x-8 text-[19px] font-semibold ${poppins.className}`} // ✅ Larger & Bold
           >
             {navLinks.map((link) => (
               <motion.li
@@ -418,14 +580,14 @@ const Navbar = () => {
           className="fixed top-0 left-0 h-full w-64 bg-[#113c22] shadow-lg z-40"
         >
           <ul
-            className={`flex flex-col mt-20 px-6 space-y-6 font-medium ${poppins.className}`}
+            className={`flex flex-col mt-20 px-6 space-y-6 text-lg font-semibold ${poppins.className}`}
           >
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={handleLinkClick}
-                  className={`block capitalize text-lg transition-colors duration-300 ${
+                  className={`block capitalize transition-colors duration-300 ${
                     pathname === link.href ? "text-[#8CC63F]" : "text-white"
                   } hover:text-[#8CC63F]`}
                 >
@@ -436,7 +598,7 @@ const Navbar = () => {
           </ul>
         </motion.div>
 
-        {/* 🔲 Blackish overlay behind mobile menu */}
+        {/* 🔲 Overlay */}
         {menuOpen && (
           <div
             className="fixed inset-0 bg-black/40 z-30"
@@ -449,3 +611,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

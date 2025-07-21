@@ -39,7 +39,7 @@ export default function AboutHero() {
   const primaryColor = '#8CC63F'; // Define your primary color here for easy updates
 
   return (
-    <section className="relative overflow-hidden py-36 px-5 sm:px-10 bg-[#f1faee] text-black min-h-[70vh] flex items-center">
+    <section className="relative overflow-hidden py-36 px-5 sm:px-10  bg-gradient-to-tr from-[#e0f7fa] via-[#e3f2fd] to-[#e0f7fa]  text-black min-h-[70vh] flex items-center">
       <div className="max-w-[1300px] mx-auto w-full flex flex-col lg:flex-row items-center gap-16 lg:gap-10">
         {/* Content Section */}
         <motion.div

@@ -183,7 +183,7 @@ const headlineVariants = {
 
 export default function Testimonials() {
   return (
-    <section className="relative bg-[#eefaf9] text-black py-20 px-4 overflow-hidden">
+    <section className="relative  bg-gradient-to-tr from-[#e0f7fa] via-[#e3f2fd] to-[#e0f7fa]  text-black py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <motion.h1
           className="text-4xl font-bold mb-14"
