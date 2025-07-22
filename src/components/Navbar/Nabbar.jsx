@@ -1169,8 +1169,8 @@ const Navbar = () => {
 
               {/* 🔗 Bottom Footer Links */}
               <div className="py-6 text-center text-sm text-white/80 border-t border-white/20 w-full mt-8">
-                <p>© {new Date().getFullYear()} Innovise. All rights reserved.</p>
-                <div className="flex justify-center gap-4 mt-2 text-white text-sm">
+                {/* <p>© {new Date().getFullYear()} Innovise. All rights reserved.</p> */}
+                {/* <div className="flex justify-center gap-4 mt-2 text-white text-sm">
                   <a
                     href="/privacy-policy"
                     className="hover:text-[#8CC63F] transition-colors"
@@ -1189,7 +1189,7 @@ const Navbar = () => {
                   >
                     Support
                   </a>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           )}
