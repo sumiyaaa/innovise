@@ -7,7 +7,11 @@ import HomeOverview from "@/components/HomeOverview/HomeOverview"
 import Footer from "@/components/AboutPage/Footer";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import GreenBackground from "@/components/GreenBackground";
-
+export const generateMetadata = () => ({
+  title:
+    "Innovise",
+  description: "Transforming Enterprise Workflows with Innovative ServiceNow Solutions Across All Domains",
+});
 export default function Home() {
   return (
     <>

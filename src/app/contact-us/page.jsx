@@ -112,6 +112,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import illustration from "../../../public/images/illustration.png";
 
+
+
 export default function ContactUs() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
