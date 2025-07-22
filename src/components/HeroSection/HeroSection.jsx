@@ -5,6 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import hero from "../../../public/images/hero.png";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // Animations
 const fadeInUp = {
@@ -74,14 +75,24 @@ export default function HeroSection() {
             </span>
           </motion.h2>
 
-          <motion.button
+          {/* <motion.button
             className="px-9 py-4 text-lg font-semibold rounded-lg cursor-pointer transition-all duration-300 ease-in-out shadow-md"
             style={{ backgroundColor: primaryColor, color: "#0d0c11" }}
             variants={fadeInUp}
             whileHover={buttonHover}
           >
             Get Started
-          </motion.button>
+          </motion.button> */}
+          <Link href="/about-us">
+  <motion.button
+    className="px-9 py-4 text-lg font-semibold rounded-lg cursor-pointer transition-all duration-300 ease-in-out shadow-md"
+    style={{ backgroundColor: primaryColor, color: "#0d0c11" }}
+    variants={fadeInUp}
+    whileHover={buttonHover}
+  >
+    Get Started
+  </motion.button>
+</Link>
         </motion.div>
       </div>
     </section>
