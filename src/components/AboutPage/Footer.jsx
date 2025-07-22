@@ -220,7 +220,7 @@ export default function Footer() {
                 { text: 'Home', href: '/' },
                 { text: 'About Us', href: '/about' },
                 { text: 'Services', href: '/services' },
-                { text: 'Solutions', href: '/solutions' },
+             
                 { text: 'Contact Us', href: '/contact' },
               ],
             },

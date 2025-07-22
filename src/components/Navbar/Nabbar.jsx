@@ -1078,7 +1078,9 @@ const Navbar = () => {
 
       {/* ✅ Navbar */}
       <nav className="relative z-10 text-white">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+        {/* <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center"> */}
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-2 md:py-4 flex justify-between items-center">
+
           {/* 🔗 Logo */}
           <a href="/" className="flex items-center gap-2">
             <img
@@ -1131,7 +1133,7 @@ const Navbar = () => {
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
               transition={{ duration: 0.4 }}
-              className="absolute top-full left-0 w-full bg-[#113c22] shadow-lg z-40 flex flex-col items-center px-6 pt-8 rounded-b-2xl"
+              className="absolute top-full left-0 w-full bg-[#113c22] shadow-lg z-40 flex flex-col items-center px-6 pt-8 "
             >
               {/* Logo on top */}
               {/* <div className="mb-6">
