@@ -14,14 +14,7 @@ const services = [
       "Custom ServiceNow solutions, integrations, and automation tailored to your enterprise needs.",
     isMainCategory: true,
     subServices: [
-      // {
-      //   title: "CSA (Certified System Administrator)",
-      //   description: "Expert configuration and administration of ServiceNow platforms by certified professionals.",
-      // },
-      // {
-      //   title: "CIS-HR (Certified Implementation Specialist – HR)",
-      //   description: "Certified implementation expertise for HR modules within ServiceNow.",
-      // },
+    
       {
         title: "CSM (Customer Service Management)",
         description: "Improve customer satisfaction with ServiceNow CSM.",

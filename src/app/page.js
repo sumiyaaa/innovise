@@ -18,10 +18,10 @@ export default function Home() {
    <div className=" relative h-screen">
       {/* Particles Background */}
       <ParticlesBackground />
-      <HeroSection/>
+      {/* <HeroSection/>
       <HomeOverview/>
       <Testimonials/>
-      <Footer/>
+      <Footer/> */}
       
 
    

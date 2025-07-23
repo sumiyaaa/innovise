@@ -16,13 +16,13 @@ export default function About() {
   return (
     <div>
       
-          <AboutPage/>
+          {/* <AboutPage/>
            <MissionSection/>
            <ValuesSection/>
            <TeamSection/>
            <StatsSection/>
            <ContactSection/>
-           <Footer/>
+           <Footer/> */}
     </div>
   )
 }
