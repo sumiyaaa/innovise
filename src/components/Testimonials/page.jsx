@@ -36,7 +36,7 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-[#8CC63F] mb-4">Success Stories</h2>
         <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-          Real impact from our students and clients — hear it from them!
+          Real impact from our clients — hear it from them!
         </p>
 
         <Swiper
