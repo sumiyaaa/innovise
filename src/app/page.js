@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 // import HeroSection from "@/components/HeroSection/HeroSection";
 import HomeOverview from "@/components/HomeOverview/HomeOverview"
 import Footer from "@/components/AboutPage/Footer";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import Testimonials from "@/components/Testimonials/page";
 import GreenBackground from "@/components/GreenBackground";
 import OurServices from "@/components/OurServices/page"
 import WhyChooseUs from "@/components/WhyChooseUs/page";
@@ -26,8 +26,8 @@ export default function Home() {
         </GradientBackground>
         <OurServices/>
         <WhyChooseUs/>
-      {/* <HomeOverview/>
-      <Testimonials/> */}
+   
+      <Testimonials/> 
       <Footer/>
       
 
