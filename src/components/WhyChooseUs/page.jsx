@@ -97,6 +97,13 @@ export default function WhyChooseUs() {
             <source src="/public/images/vedio.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video> */}
+          <div className="w-full">
+  <img
+    src="/images/choose.jpg" // ← Update path if needed
+    alt="Why Choose Us"
+    className="w-full h-auto rounded-xl border-2 border-[#8CC63F] object-cover"
+  />
+</div>
         </div>
 
         {/* Stats Section */}
