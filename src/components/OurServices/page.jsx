@@ -79,7 +79,6 @@ export default function ServiceTimeline() {
 
   return (
     <div className="relative w-full px-4 py-24 bg-black text-white">
-      {/* Heading */}
       <div className="text-center mb-20 relative z-10">
         <h2 className="text-4xl font-extrabold">
           <span className="text-white">Our </span>
@@ -91,7 +90,6 @@ export default function ServiceTimeline() {
         </p>
       </div>
 
-      {/* Vertical Line - hidden on mobile */}
       {!isMobile && (
         <div className="absolute top-[220px] bottom-24 left-1/2 transform -translate-x-1/2 w-[2px] bg-[#8CC63F] z-0" />
       )}
