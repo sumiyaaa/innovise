@@ -13,13 +13,14 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Footer from "@/components/AboutPage/Footer";
-
+import Link from "next/link";
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
+const MotionLink = motion(Link);
 const staggerContainer = {
   hidden: {},
   visible: {
@@ -58,8 +59,8 @@ const services = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-[#0d0c11] text-white">
-      <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-[#0d0c11]">
+    <div className="bg-black text-white">
+      <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/gradient-mesh.svg')] bg-cover bg-center animate-pulse-slow"></div>
         </div>
@@ -119,7 +120,8 @@ export default function AboutUs() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <motion.button
+            <MotionLink
+              href="/services"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 20px rgba(140, 198, 63, 0.5)",
@@ -129,7 +131,7 @@ export default function AboutUs() {
             >
               <Briefcase className="w-5 h-5" />
               Explore Services
-            </motion.button>
+            </MotionLink>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -154,21 +156,6 @@ export default function AboutUs() {
             </div>
           </motion.div>
         </div>
-
-        <motion.div
-          className="absolute right-0 top-1/3 hidden lg:block"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 0.3 }}
-          transition={{ delay: 0.8 }}
-        >
-          <Image
-            src="/images/servicenow-dashboard.png"
-            width={400}
-            height={300}
-            alt="Dashboard Preview"
-            className="rotate-12"
-          />
-        </motion.div>
       </section>
 
       {/* Our Story */}
@@ -217,7 +204,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Mission */}
-      <section className="py-20 px-4 bg-[#111114]">
+      <section className="py-20 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-16"
