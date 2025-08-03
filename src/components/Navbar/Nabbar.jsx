@@ -240,7 +240,7 @@ const Navbar = () => {
           <img
             src="/images/logo.png"
             alt="Innovice"
-            className="h-14 w-auto"
+            className="h-16 w-auto"
           />
         </a>
 

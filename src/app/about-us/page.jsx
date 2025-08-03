@@ -207,6 +207,62 @@ export default function AboutUs() {
         </div>
       </section>
 
+{/* Meet Our Founders */}
+<section className="py-20 px-4 bg-black">
+  <div className="max-w-6xl mx-auto text-center mb-12">
+    <h2 className="text-3xl font-bold mb-4">Meet Our Founders</h2>
+    <p className="text-gray-300 max-w-2xl mx-auto">
+      The visionary minds driving Innovise forward.
+    </p>
+  </div>
+
+  <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    {/* Founder 1 */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="bg-[#0d0c11] border border-[#2c2c2c] rounded-xl p-6 text-center hover:border-[#8CC63F]"
+    >
+      <Image
+        src="/images/sirhamid.png" // replace with real image path
+        alt="Founder 1"
+        width={150}
+        height={150}
+        className="mx-auto rounded-full mb-4 object-cover"
+      />
+      <h3 className="text-xl font-semibold text-white">Hamid Lagari</h3>
+      <p className="text-gray-400 mb-2">Founder & CEO</p>
+      <p className="text-gray-500 text-sm">
+        Passionate about digital transformation through ServiceNow.
+      </p>
+    </motion.div>
+
+    {/* Founder 2 */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="bg-[#0d0c11] border border-[#2c2c2c] rounded-xl p-6 text-center hover:border-[#8CC63F]"
+    >
+      <Image
+        src="/images/siryahya.png" // replace with real image path
+        alt="Founder 2"
+        width={150}
+        height={150}
+        className="mx-auto rounded-full mb-4 object-cover"
+      />
+      <h3 className="text-xl font-semibold text-white">Muhammad Yahya</h3>
+      <p className="text-gray-400 mb-2">Co-Founder & CTO</p>
+      <p className="text-gray-500 text-sm">
+        Driving innovation with deep ServiceNow expertise and leadership.
+      </p>
+    </motion.div>
+  </div>
+</section>
+
       {/* Our Mission */}
       <section className="py-20 px-4 bg-black">
         <div className="max-w-6xl mx-auto">

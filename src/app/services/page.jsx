@@ -119,7 +119,7 @@ const ServicesPage = () => {
             href="#services"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block bg-[#8CC63F] text-black font-semibold px-8 py-3 rounded-lg transition shadow-lg"
+            className="inline-block bg-[#8CC63F] text-black font-semibold px-8 py-3 rounded-full transition shadow-lg"
           >
             Discover Our Services
           </motion.a>

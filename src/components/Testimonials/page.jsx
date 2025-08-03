@@ -8,22 +8,22 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    name: "Ali Raza",
-    image: "/images/ali.jpg",
+    name: "Ahsan Raza",
+    image: "/images/client1.jpeg",
     rating: 5,
     review:
       "Innovice helped me pass my CSA exam in just 4 weeks. The hands-on labs and mentorship were top-notch!",
   },
   {
-    name: "Ayesha Malik",
-    image: "/images/ayesha.jpg",
+    name: "Fatima",
+    image: "/images/client2.jpg",
     rating: 4,
     review:
       "Thanks to Innovice’s expert trainers, I deployed ServiceNow ITSM in our company successfully.",
   },
   {
-    name: "Umer Shah",
-    image: "/images/umer.jpg",
+    name: "Josh Coffe",
+    image: "/images/client3.jpg",
     rating: 5,
     review:
       "We reduced ticket handling time by 40% after Innovice restructured our workflows. Highly recommended!",
