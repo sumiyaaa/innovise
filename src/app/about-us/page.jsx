@@ -13,6 +13,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Footer from "@/components/AboutPage/Footer";
+import GradientBackground from "@/components/GradientBackground/page";
 
 // Animation variants
 const fadeIn = {
@@ -60,9 +61,12 @@ export default function AboutUs() {
   return (
     <div className="bg-[#0d0c11] text-white">
       <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-[#0d0c11]">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/gradient-mesh.svg')] bg-cover bg-center animate-pulse-slow"></div>
+         <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
+          <GradientBackground />
         </div>
+        {/* <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/gradient-mesh.svg')] bg-cover bg-center animate-pulse-slow"></div>
+        </div> */}
 
         <div className="max-w-6xl mx-auto h-full flex flex-col justify-center items-center text-center relative z-10">
           <motion.div
@@ -172,7 +176,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-black" >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
@@ -290,7 +294,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Services */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-16"
