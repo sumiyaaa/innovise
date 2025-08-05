@@ -369,7 +369,7 @@ export default function ContactUs() {
           <div className="flex flex-col items-center">
             <MapPin className="text-[#8CC63F] mb-2" size={32} />
             <p className="font-semibold">Address</p>
-            <p className="text-sm mt-1">Hyddrabad</p>
+            <p className="text-sm mt-1">Hyderabad</p>
           </div>
 
           <div className="flex flex-col items-center">
