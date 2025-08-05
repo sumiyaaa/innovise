@@ -139,7 +139,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h2
-            className="text-[31px] sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight mb-8 text-white"
+            className="text-4xl sm:text-5xl font-extrabold leading-tight mb-8 text-white"
             variants={fadeInUp}
           >
             Empowering Businesses <br />
@@ -161,7 +161,7 @@ export default function HeroSection() {
           </motion.h2>
 
           <motion.p
-            className="text-base md:text-lg lg:text-xl text-gray-300 mb-8"
+            className="text-lg sm:text-lg text-gray-300 mb-8"
             variants={fadeInUp}
           >
             At Innovise, we deliver modern IT solutions using ServiceNow to help
