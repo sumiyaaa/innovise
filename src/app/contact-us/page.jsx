@@ -102,14 +102,12 @@
 //           />
 //         </motion.div>
 //       </div>
-    
+
 //     </section>
 //     <Footer/>
 //     </>
 //   );
 // }
-
-
 
 // "use client";
 
@@ -246,16 +244,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
 "use client";
 
 import React, { useState } from "react";
@@ -286,23 +274,22 @@ export default function ContactUs() {
   return (
     <>
       {/* Hero */}
-        <section className="relative min-h-[70vh] px-6 flex items-center justify-center bg-black pt-[100px] sm:pt-0 overflow-hidden">
-         <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
-           <GradientBackground />
-         </div>
-    
+      <section className="relative min-h-[70vh] px-6 flex items-center justify-center bg-black pt-[100px] sm:pt-0 overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
+          <GradientBackground />
+        </div>
 
-         <div className="relative z-10 text-center max-w-3xl mx-auto px-4 backdrop-blur-sm">
-           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
-             Get in <span className="text-[#8CC63F]">Touch</span>
-           </h1>
-           <p className="text-gray-300 text-base sm:text-lg">
-             Have questions about our ServiceNow solutions or need support?
-             <br className="hidden sm:block" />
-             We're here to help you every step of the way.
-           </p>
-         </div>
-       </section>
+        <div className="relative z-10 text-center max-w-3xl mx-auto px-4 backdrop-blur-sm">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+            Get in <span className="text-[#8CC63F]">Touch</span>
+          </h1>
+          <p className="text-gray-300 text-base sm:text-lg">
+            Have questions about our ServiceNow solutions or need support?
+            <br className="hidden sm:block" />
+            We're here to help you every step of the way.
+          </p>
+        </div>
+      </section>
 
       {/* Contact Form + Map */}
       <section className="bg-black text-white py-16 px-4">
@@ -365,10 +352,10 @@ export default function ContactUs() {
           <div className="w-full h-full">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24157.983009037255!2d-74.013475!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQyJzQ2LjAiTiA3NMKwMDcnMjQuMiJX!5e0!3m2!1sen!2sus!4v1615934574356!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10457.87776442878!2d67.07273954071045!3d25.396022342208577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e0a2f4a04cf%3A0x49b45047c4ab178a!2sHyderabad%2C%20Karachi%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1625036317204!5m2!1sen!2sus"
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: "100%" }}
+              style={{ border: 0, minHeight: "500px" }}
               allowFullScreen=""
               loading="lazy"
             ></iframe>
@@ -388,34 +375,35 @@ export default function ContactUs() {
           <div className="flex flex-col items-center">
             <Phone className="text-[#8CC63F] mb-2" size={32} />
             <p className="font-semibold">Phone</p>
-            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">+1 235 2355 98</p>
+            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">
+              +1 235 2355 98
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
             <Mail className="text-[#8CC63F] mb-2" size={32} />
             <p className="font-semibold">Email</p>
-            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">hrinnovise@gmail.com</p>
+            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">
+              hrinnovise@gmail.com
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
-  <Linkedin className="text-[#8CC63F] mb-2" size={32} />
-  <p className="font-semibold">LinkedIn</p>
-  <a
-    href="https://www.linkedin.com/company/innoviseltd/posts/?feedView=all" // 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-sm mt-1 text-white-600 hover:underline cursor-pointer"
-  >
-    linkedin.com
-  </a>
-</div>
+            <Linkedin className="text-[#8CC63F] mb-2" size={32} />
+            <p className="font-semibold">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/company/innoviseltd/posts/?feedView=all" //
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm mt-1 text-white-600 hover:underline cursor-pointer"
+            >
+              linkedin.com
+            </a>
+          </div>
         </div>
       </section>
-      
 
       <Footer />
-      
-    
     </>
   );
 }
