@@ -99,13 +99,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
 "use client";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -146,7 +139,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h2
-            className="text-3xl sm:text-5xl font-extrabold leading-tight mb-8 text-white"
+            className="text-[31px] sm:text-5xl md:text-6xl lg:text-6xl font-extrabold leading-tight mb-8 text-white"
             variants={fadeInUp}
           >
             Empowering Businesses <br />
@@ -168,12 +161,12 @@ export default function HeroSection() {
           </motion.h2>
 
           <motion.p
-            className="text-base sm:text-lg text-gray-500 mb-8"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mb-8"
             variants={fadeInUp}
           >
-            At Innovise, we deliver modern IT solutions using ServiceNow to
-            help businesses streamline workflows, automate operations, and
-            grow smarter.
+            At Innovise, we deliver modern IT solutions using ServiceNow to help
+            businesses streamline workflows, automate operations, and grow
+            smarter.
           </motion.p>
 
           <Link href="/about-us">
