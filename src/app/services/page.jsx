@@ -103,7 +103,7 @@ const ServicesPage = () => {
       {/* ✅ Hero Section */}
       <section className="relative min-h-screen px-6 bg-black flex items-center justify-center overflow-hidden pt-[100px] sm:pt-0">
         {/* ✅ Background Gradient */}
-        <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
+        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
           <GradientBackground />
         </div>
 

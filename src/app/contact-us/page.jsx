@@ -287,9 +287,10 @@ export default function ContactUs() {
     <>
       {/* Hero */}
         <section className="relative min-h-[70vh] px-6 flex items-center justify-center bg-black pt-[100px] sm:pt-0 overflow-hidden">
-         <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
+         <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
            <GradientBackground />
          </div>
+    
 
          <div className="relative z-10 text-center max-w-3xl mx-auto px-4 backdrop-blur-sm">
            <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
@@ -410,8 +411,11 @@ export default function ContactUs() {
 </div>
         </div>
       </section>
+      
 
       <Footer />
+      
+    
     </>
   );
 }

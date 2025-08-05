@@ -65,7 +65,7 @@ export default function AboutUs() {
   return (
     <div className="bg-black text-white">
       <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-black">
-         <div className="absolute inset-0 z-0 opacity-50 pointer-events-none">
+         <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
           <GradientBackground />
         </div>
         {/* <div className="absolute inset-0 opacity-20">
@@ -411,7 +411,7 @@ export default function AboutUs() {
                 Passionate about digital transformation through ServiceNow.
               </p>
               <a
-                href="https://www.linkedin.com/in/hamidlagari"
+                href="https://www.linkedin.com/in/hamid-laghari-7769801bb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#8CC63F] transition"
@@ -444,7 +444,7 @@ export default function AboutUs() {
                 Driving innovation with deep ServiceNow expertise and leadership.
               </p>
               <a
-                href="https://www.linkedin.com/in/muhammadyahya"
+                href="https://www.linkedin.com/in/yahyah-mirza-a2575b295/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#8CC63F] transition"
