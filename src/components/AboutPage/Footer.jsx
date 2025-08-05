@@ -179,7 +179,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-4">
               <a
-                href="https://linkedin.com/company/innoviseltd"
+                href="https://www.linkedin.com/company/innoviseltd/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-[#8CC63F] hover:shadow-lg transition-all duration-300"

@@ -15,9 +15,9 @@ import { useEffect, useState } from "react";
 const services = [
   {
     icon: <Settings className="w-6 h-6 text-[#8CC63F]" />,
-    title: "Incident Management",
+    title: "SPM",
     description:
-      "Manage and resolve IT incidents efficiently to minimize impact on business operations.",
+      "Deliver business value with ServiceNow SPM.",
   },
   {
     icon: <Database className="w-6 h-6 text-[#8CC63F]" />,
