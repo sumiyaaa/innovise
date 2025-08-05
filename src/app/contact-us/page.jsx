@@ -351,8 +351,8 @@ export default function ContactUs() {
           {/* Map */}
           <div className="w-full h-full">
             <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10457.87776442878!2d67.07273954071045!3d25.396022342208577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e0a2f4a04cf%3A0x49b45047c4ab178a!2sHyderabad%2C%20Karachi%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1625036317204!5m2!1sen!2sus"
+              title="Google Map - Latifabad Unit 8"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24157.48356802168!2d68.3520856!3d25.3676477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c705c3fea8583%3A0xe613bf128b88647e!2sLatifabad%20Unit%20No.%208%20Latifabad%20Unit%208%20Latifabad%2C%20Hyderabad%2C%2071000%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1625036317204!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "500px" }}
