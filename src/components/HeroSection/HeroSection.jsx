@@ -161,7 +161,7 @@ export default function HeroSection() {
           </motion.h2>
 
           <motion.p
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mb-8"
+            className="text-base md:text-lg lg:text-xl text-gray-300 mb-8"
             variants={fadeInUp}
           >
             At Innovise, we deliver modern IT solutions using ServiceNow to help
