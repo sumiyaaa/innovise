@@ -19,11 +19,11 @@ import GradientBackground from "@/components/GradientBackground/page";
 import Footer from "../../components/AboutPage/Footer";
 
 const services = [
-  {
-    title: "CSM (Customer Service Management)",
-    description: "Improve customer satisfaction with ServiceNow CSM.",
-    icon: <UserCheck size={32} className="text-[#8CC63F]" />,
-  },
+  // {
+  //   title: "CSM (Customer Service Management)",
+  //   description: "Improve customer satisfaction with ServiceNow CSM.",
+  //   icon: <UserCheck size={32} className="text-[#8CC63F]" />,
+  // },
   {
     title: "SPM (Strategic Portfolio Management)",
     description: "Deliver business value with ServiceNow SPM.",
@@ -45,14 +45,20 @@ const services = [
     icon: <Globe size={32} className="text-[#8CC63F]" />,
   },
   {
+    title: "ITOM (IT Operations Management)",
+    description: "Optimize IT operations with discovery and monitoring.",
+    icon: <Server size={32} className="text-[#8CC63F]" />,
+  },
+  
+  {
     title: "Integration",
     description: "Connect ServiceNow with third-party systems.",
     icon: <Repeat size={32} className="text-[#8CC63F]" />,
   },
   {
-    title: "ITOM (IT Operations Management)",
-    description: "Optimize IT operations with discovery and monitoring.",
-    icon: <Server size={32} className="text-[#8CC63F]" />,
+    title: "CSM (Customer Service Management)",
+    description: "Improve customer satisfaction with ServiceNow CSM.",
+    icon: <UserCheck size={32} className="text-[#8CC63F]" />,
   },
   {
     title: "IT Consulting",
