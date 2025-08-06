@@ -109,7 +109,7 @@ const ServicesPage = () => {
 
         {/* ✅ Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 backdrop-blur-sm">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
             Complete <span className="text-[#8CC63F]">ServiceNow Solutions</span>
           </h1>
           <p className="text-gray-300 text-base sm:text-lg md:text-xl mb-8">

@@ -280,7 +280,7 @@ export default function ContactUs() {
         </div>
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4 backdrop-blur-sm">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Get in <span className="text-[#8CC63F]">Touch</span>
           </h1>
           <p className="text-gray-300 text-base sm:text-lg">
@@ -288,6 +288,45 @@ export default function ContactUs() {
             <br className="hidden sm:block" />
             We're here to help you every step of the way.
           </p>
+        </div>
+      </section>
+
+        <section className="bg-black py-12 px-4 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-white">
+          <div className="flex flex-col items-center">
+            <MapPin className="text-[#8CC63F] mb-2" size={32} />
+            <p className="font-semibold">Address</p>
+            <p className="text-sm mt-1">Hyderabad</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <Phone className="text-[#8CC63F] mb-2" size={32} />
+            <p className="font-semibold">Phone</p>
+            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">
+              +92 304 3673951
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <Mail className="text-[#8CC63F] mb-2" size={32} />
+            <p className="font-semibold">Email</p>
+            <p className="text-sm mt-1 text-white hover:underline cursor-pointer">
+              hrinnovise@gmail.com
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <Linkedin className="text-[#8CC63F] mb-2" size={32} />
+            <p className="font-semibold">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/company/innoviseltd/posts/?feedView=all" //
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm mt-1 text-white-600 hover:underline cursor-pointer"
+            >
+              linkedin.com
+            </a>
+          </div>
         </div>
       </section>
 
@@ -364,7 +403,7 @@ export default function ContactUs() {
       </section>
 
       {/* Contact Info Bottom Section */}
-      <section className="bg-black py-12 px-4 text-center">
+      {/* <section className="bg-black py-12 px-4 text-center">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-white">
           <div className="flex flex-col items-center">
             <MapPin className="text-[#8CC63F] mb-2" size={32} />
@@ -401,7 +440,7 @@ export default function ContactUs() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

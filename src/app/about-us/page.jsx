@@ -80,7 +80,7 @@ export default function AboutUs() {
             className="mb-4"
           >
             <span className="px-4 py-2 bg-[#8CC63F]/10 text-[#8CC63F] rounded-full text-sm font-medium">
-              INNOVATING SINCE 2018
+              INNOVATING SINCE 2020
             </span>
           </motion.div>
 
@@ -175,7 +175,7 @@ export default function AboutUs() {
             variants={staggerContainer}
           >
             <motion.h2 className="text-3xl font-bold mb-6" variants={fadeIn}>
-              Our Story
+            Our <span className="text-[#8CC63F]"> Story</span>  
             </motion.h2>
             <motion.p className="text-gray-300 mb-4" variants={fadeIn}>
               Founded in 2018, Innovise began with a simple mission: to help

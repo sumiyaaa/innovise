@@ -139,7 +139,7 @@ export default function HeroSection() {
           animate="visible"
         >
           <motion.h2
-            className="text-4xl sm:text-5xl font-extrabold leading-tight mb-8 text-white heading"
+            className="text-4xl sm:text-5xl font-bold leading-tight mb-8 text-white heading"
             variants={fadeInUp}
           >
             Empowering Businesses <br />
