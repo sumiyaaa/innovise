@@ -141,17 +141,33 @@ export default function AboutUs() {
               Explore Services
             </MotionLink>
 
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 bg-transparent border-2 border-[#8CC63F] text-white rounded-full flex items-center gap-2"
             >
               <Users className="w-5 h-5" />
               Meet Our Team
-            </motion.button>
+            </motion.button> */}
+            <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={() => {
+    const section = document.getElementById("team");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  className="px-8 py-3 bg-transparent border-2 border-[#8CC63F] text-white rounded-full flex items-center gap-2"
+>
+  <Users className="w-5 h-5" />
+  Meet Our Team
+</motion.button>
+
+
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className="absolute -bottom-32 left-1/2 transform -translate-x-1/2"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
@@ -162,7 +178,25 @@ export default function AboutUs() {
                 SCROLL TO EXPLORE
               </span>
             </div>
-          </motion.div>
+          </motion.div> */}
+          <motion.div
+  className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 cursor-pointer"
+  animate={{ y: [0, 10, 0] }}
+  transition={{ duration: 2, repeat: Infinity }}
+  onClick={() => {
+    const section = document.getElementById("explore-section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
+  <div className="flex flex-col items-center">
+    <ChevronDown className="w-6 h-6 text-[#8CC63F] animate-bounce" />
+    <span className="text-xs text-gray-400 mt-2">SCROLL TO EXPLORE</span>
+  </div>
+</motion.div>
+
+
         
         </div>
       </section>
@@ -361,7 +395,7 @@ export default function AboutUs() {
       </div>
     </section>  */}
 
-     <section className="relative overflow-hidden">
+     <section id="team" className="relative overflow-hidden">
       {/* ✅ Top Wave */}
       <div className="absolute top-0 left-0 w-full z-0">
         <svg
@@ -407,7 +441,7 @@ export default function AboutUs() {
               className="rounded-xl object-cover w-[100px] h-[100px]"
             />
             <div className="text-left">
-              <h3 className="text-xl font-semibold text-white">Hamid Lagari</h3>
+              <h3 className="text-xl font-semibold text-white">Hamid Laghari</h3>
               <p className="text-[#8CC63F] font-medium mb-1">Founder & CEO</p>
               <p className="text-sm text-gray-500 mb-2">
                 Passionate about digital transformation through ServiceNow.
@@ -440,7 +474,7 @@ export default function AboutUs() {
               className="rounded-xl object-cover w-[100px] h-[100px]"
             />
             <div className="text-left">
-              <h3 className="text-xl font-semibold text-white">Muhammad Yahya</h3>
+              <h3 className="text-xl font-semibold text-white">Yahyah Mirza</h3>
               <p className="text-[#8CC63F] font-medium mb-1">Co-Founder & CTO</p>
               <p className="text-sm text-gray-500 mb-2">
                 Driving innovation with deep ServiceNow expertise and leadership.
