@@ -214,7 +214,7 @@ export default function AboutUs() {
             Our <span className="text-[#8CC63F]"> Story</span>  
             </motion.h2>
             <motion.p className="text-gray-300 mb-4" variants={fadeIn}>
-              Founded in 2018, Innovise began with a simple mission: to help
+              Founded in 2020, Innovise began with a simple mission: to help
               businesses harness the power of ServiceNow to transform their
               operations.
             </motion.p>
