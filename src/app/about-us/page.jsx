@@ -62,6 +62,7 @@ const services = [
 ];
 
 export default function AboutUs() {
+  
   return (
     <div className="bg-black text-white">
       <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-black">
@@ -162,11 +163,12 @@ export default function AboutUs() {
               </span>
             </div>
           </motion.div>
+        
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-4 bg-[black]" >
+      <section id="explore-section" className="py-20 px-4 bg-[black]" >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
@@ -613,3 +615,4 @@ export default function AboutUs() {
     </div>
   );
 }
+

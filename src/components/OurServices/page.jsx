@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const services = [
   {
@@ -199,9 +200,11 @@ export default function ServiceTimeline() {
       </div>
 
       <div className="text-center mt-20 relative z-10">
+        <Link href="/services">
         <button className="bg-[#8CC63F] hover:bg-[#7abf35] text-black font-bold py-3 px-6 rounded-full transition duration-300">
           More Services
         </button>
+        </Link>
       </div>
     </div>
   );
