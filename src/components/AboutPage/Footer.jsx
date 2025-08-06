@@ -218,10 +218,10 @@ export default function Footer() {
               title: 'Company',
               links: [
                 { text: 'Home', href: '/' },
-                { text: 'About Us', href: '/about' },
+                { text: 'About Us', href: '/about-us' },
                 { text: 'Services', href: '/services' },
              
-                { text: 'Contact Us', href: '/contact' },
+                { text: 'Contact Us', href: '/contact-us' },
               ],
             },
             {
