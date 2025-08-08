@@ -1,5 +1,3 @@
-
-
 // "use client";
 // import React, { useState, useEffect, useRef } from "react";
 // import { FaBars, FaTimes } from "react-icons/fa";
@@ -180,13 +178,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
-
 // "use client";
 
 // import React, { useState, useEffect, useRef } from "react";
@@ -321,16 +312,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
-
-
-
-
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -372,7 +353,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-black bg-opacity-80 backdrop-blur-md">
-      <nav className="max-w-7xl mx-auto px-4 md:px-8 py-3 flex justify-between items-center text-white">
+      <nav className="w-[95%] mx-auto px-4 md:px-8 py-3 flex justify-between items-center text-white">
         {/* 🔗 Logo */}
         <a href="/" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="Innovise" className="h-16 w-auto" />
@@ -432,9 +413,7 @@ const Navbar = () => {
                     href={link.href}
                     onClick={handleLinkClick}
                     className={`capitalize transition-colors duration-300 ${
-                      pathname === link.href
-                        ? "text-[#8CC63F]"
-                        : "text-white"
+                      pathname === link.href ? "text-[#8CC63F]" : "text-white"
                     } hover:text-[#8CC63F]`}
                   >
                     {link.name}

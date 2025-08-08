@@ -20,9 +20,7 @@ export default function Home() {
       {/* Particles Background 
 
       <ParticlesBackground /> */}
-      <GradientBackground>
-        <HeroSection />
-      </GradientBackground>
+      <HeroSection />
       <OurServices />
       <WhyChooseUs />
 

@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
   return (
     <section className="relative w-full text-white py-20 px-4 overflow-hidden bg-[#0d0c11]">
       {/* Content Container */}
-      <div className="relative z-10 max-w-6xl mx-auto space-y-12">
+      <div className="relative z-10 w-[90%] mx-auto space-y-12">
         {/* Heading */}
         <div className="text-center space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
@@ -98,12 +98,12 @@ export default function WhyChooseUs() {
             Your browser does not support the video tag.
           </video> */}
           <div className="w-full">
-  <img
-    src="/images/choose.jpg" // ← Update path if needed
-    alt="Why Choose Us"
-    className="w-full h-auto rounded-xl border-2 border-[#8CC63F] object-cover"
-  />
-</div>
+            <img
+              src="/images/choose.jpg" // ← Update path if needed
+              alt="Why Choose Us"
+              className="w-full h-auto rounded-xl border-2 border-[#8CC63F] object-cover"
+            />
+          </div>
         </div>
 
         {/* Stats Section */}

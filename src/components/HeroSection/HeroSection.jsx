@@ -104,6 +104,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import GradientBackground from "../GradientBackground/page";
 
 // Animations
 const fadeInUp = {
@@ -131,56 +132,58 @@ const primaryColor = "#8CC63F";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-4xl w-full text-center z-10">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.h2
-            className="text-4xl sm:text-5xl font-bold leading-tight mb-8 text-white heading"
-            variants={fadeInUp}
+    <GradientBackground>
+      <section className="relative h-[700px] flex items-center justify-center px-4">
+        <div className="max-w-4xl w-full text-center z-10">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
           >
-            Empowering Businesses <br />
-            with{" "}
-            <span style={{ color: primaryColor }}>
-              <Typewriter
-                words={[
-                  "Intelligent ServiceNow Solutions",
-                  "Powerful IT Automation",
-                  "Smart Digital Workflows",
-                ]}
-                loop={0}
-                cursor
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={2000}
-              />
-            </span>
-          </motion.h2>
-
-          <motion.p
-            className="text-lg sm:text-lg text-gray-300 mb-8"
-            variants={fadeInUp}
-          >
-            At Innovise, we deliver modern IT solutions using ServiceNow to help
-            businesses streamline workflows, automate operations, and grow
-            smarter.
-          </motion.p>
-
-          <Link href="/about-us">
-            <motion.button
-              className="px-8 py-3 text-base sm:text-lg font-semibold rounded-full shadow-md transition-all duration-300 ease-in-out"
-              style={{ backgroundColor: primaryColor, color: "#0d0c11" }}
+            <motion.h2
+              className="text-4xl sm:text-5xl font-bold leading-tight mb-8 text-white heading"
               variants={fadeInUp}
-              whileHover={buttonHover}
             >
-              Get Started
-            </motion.button>
-          </Link>
-        </motion.div>
-      </div>
-    </section>
+              Empowering Businesses <br />
+              with{" "}
+              <span style={{ color: primaryColor }}>
+                <Typewriter
+                  words={[
+                    "Intelligent ServiceNow Solutions",
+                    "Powerful IT Automation",
+                    "Smart Digital Workflows",
+                  ]}
+                  loop={0}
+                  cursor
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={2000}
+                />
+              </span>
+            </motion.h2>
+
+            <motion.p
+              className="text-lg sm:text-lg text-gray-300 mb-8"
+              variants={fadeInUp}
+            >
+              At Innovise, we deliver modern IT solutions using ServiceNow to
+              help businesses streamline workflows, automate operations, and
+              grow smarter.
+            </motion.p>
+
+            <Link href="/about-us">
+              <motion.button
+                className="px-8 py-3 text-base sm:text-lg font-semibold rounded-full shadow-md transition-all duration-300 ease-in-out"
+                style={{ backgroundColor: primaryColor, color: "#0d0c11" }}
+                variants={fadeInUp}
+                whileHover={buttonHover}
+              >
+                Get Started
+              </motion.button>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+    </GradientBackground>
   );
 }

@@ -140,15 +140,12 @@
 //   );
 // }
 
-
-
-
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import GreenBackground from '@/components/GreenBackground';
-import { FaLinkedinIn, FaInstagram, FaEnvelope } from 'react-icons/fa';
+"use client";
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import GreenBackground from "@/components/GreenBackground";
+import { FaLinkedinIn, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -160,7 +157,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Content */}
-      <div className="relative z-10 px-6 py-16 max-w-7xl mx-auto">
+      <div className="relative z-10 px-6 py-16 w-[95%] mx-auto">
         {/* Top Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -206,36 +203,38 @@ export default function Footer() {
           {/* Footer Links */}
           {[
             {
-              title: 'Solutions',
+              title: "Solutions",
               links: [
-                { text: 'IT Service Management', href: '/solutions/itsm' },
-                { text: 'Customer Service Management', href: '/solutions/csm' },
-                { text: 'HR Service Delivery', href: '/solutions/hr' },
-                { text: 'Security Operations', href: '/solutions/security' },
+                { text: "IT Service Management", href: "/solutions/itsm" },
+                { text: "Customer Service Management", href: "/solutions/csm" },
+                { text: "HR Service Delivery", href: "/solutions/hr" },
+                { text: "Security Operations", href: "/solutions/security" },
               ],
             },
             {
-              title: 'Company',
+              title: "Company",
               links: [
-                { text: 'Home', href: '/' },
-                { text: 'About Us', href: '/about-us' },
-                { text: 'Services', href: '/services' },
-             
-                { text: 'Contact Us', href: '/contact-us' },
+                { text: "Home", href: "/" },
+                { text: "About Us", href: "/about-us" },
+                { text: "Services", href: "/services" },
+
+                { text: "Contact Us", href: "/contact-us" },
               ],
             },
             {
-              title: 'Resources',
+              title: "Resources",
               links: [
-                { text: 'Case Studies', href: '/resources/case-studies' },
-                { text: 'Whitepapers', href: '/resources/whitepapers' },
-                { text: 'Webinars', href: '/resources/webinars' },
-                { text: 'FAQ', href: '/resources/faq' },
+                { text: "Case Studies", href: "/resources/case-studies" },
+                { text: "Whitepapers", href: "/resources/whitepapers" },
+                { text: "Webinars", href: "/resources/webinars" },
+                { text: "FAQ", href: "/resources/faq" },
               ],
             },
           ].map((section, i) => (
             <div key={i}>
-              <h4 className="font-semibold text-lg mb-3 text-[#8CC63F]">{section.title}</h4>
+              <h4 className="font-semibold text-lg mb-3 text-[#8CC63F]">
+                {section.title}
+              </h4>
               <ul className="space-y-2 text-sm text-gray-300">
                 {section.links.map((link, j) => (
                   <li key={j}>
@@ -260,7 +259,9 @@ export default function Footer() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <h4 className="text-xl font-semibold text-[#8CC63F] mb-2">Stay Updated</h4>
+          <h4 className="text-xl font-semibold text-[#8CC63F] mb-2">
+            Stay Updated
+          </h4>
           <p className="text-sm text-gray-300 mb-4">
             Subscribe to our newsletter for the latest insights.
           </p>
@@ -282,16 +283,22 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="mt-12 pt-6 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-          <div>&copy; {new Date().getFullYear()} Innovise. All rights reserved.</div>
+          <div>
+            &copy; {new Date().getFullYear()} Innovise. All rights reserved.
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/privacy" className="hover:text-white hover:underline">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white hover:underline">Terms of Service</Link>
-            <Link href="/cookies" className="hover:text-white hover:underline">Cookie Policy</Link>
+            <Link href="/privacy" className="hover:text-white hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-white hover:underline">
+              Terms of Service
+            </Link>
+            <Link href="/cookies" className="hover:text-white hover:underline">
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
-

@@ -16,7 +16,8 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Footer from "@/components/AboutPage/Footer";
-import Link from "next/link";import GradientBackground from "@/components/GradientBackground/page";
+import Link from "next/link";
+import GradientBackground from "@/components/GradientBackground/page";
 
 // Animation variants
 const fadeIn = {
@@ -62,18 +63,17 @@ const services = [
 ];
 
 export default function AboutUs() {
-  
   return (
     <div className="bg-black text-white">
-      <section className="relative min-h-screen py-32 px-4 overflow-hidden bg-black">
-         <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
+      <section className="relative h-[800px] py-32 px-4 overflow-hidden bg-black">
+        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
           <GradientBackground />
         </div>
         {/* <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/gradient-mesh.svg')] bg-cover bg-center animate-pulse-slow"></div>
         </div> */}
 
-        <div className="max-w-6xl mx-auto h-full flex flex-col justify-center items-center text-center relative z-10">
+        <div className="w-[90%] mx-auto h-full flex flex-col justify-center items-center text-center relative z-10">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -150,21 +150,19 @@ export default function AboutUs() {
               Meet Our Team
             </motion.button> */}
             <motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  onClick={() => {
-    const section = document.getElementById("team");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }}
-  className="px-8 py-3 bg-transparent border-2 border-[#8CC63F] text-white rounded-full flex items-center gap-2"
->
-  <Users className="w-5 h-5" />
-  Meet Our Team
-</motion.button>
-
-
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => {
+                const section = document.getElementById("team");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="px-8 py-3 bg-transparent border-2 border-[#8CC63F] text-white rounded-full flex items-center gap-2"
+            >
+              <Users className="w-5 h-5" />
+              Meet Our Team
+            </motion.button>
           </motion.div>
 
           {/* <motion.div
@@ -180,30 +178,29 @@ export default function AboutUs() {
             </div>
           </motion.div> */}
           <motion.div
-  className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 cursor-pointer"
-  animate={{ y: [0, 10, 0] }}
-  transition={{ duration: 2, repeat: Infinity }}
-  onClick={() => {
-    const section = document.getElementById("explore-section");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }}
->
-  <div className="flex flex-col items-center">
-    <ChevronDown className="w-6 h-6 text-[#8CC63F] animate-bounce" />
-    <span className="text-xs text-gray-400 mt-2">SCROLL TO EXPLORE</span>
-  </div>
-</motion.div>
-
-
-        
+            className="absolute -bottom-32 left-1/2 transform -translate-x-1/2 cursor-pointer"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            onClick={() => {
+              const section = document.getElementById("explore-section");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            <div className="flex flex-col items-center">
+              <ChevronDown className="w-6 h-6 text-[#8CC63F] animate-bounce" />
+              <span className="text-xs text-gray-400 mt-2">
+                SCROLL TO EXPLORE
+              </span>
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section id="explore-section" className="py-20 px-4 bg-[black]" >
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section id="explore-section" className="py-20 px-4 bg-[black]">
+        <div className="w-[90%] mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -211,7 +208,7 @@ export default function AboutUs() {
             variants={staggerContainer}
           >
             <motion.h2 className="text-3xl font-bold mb-6" variants={fadeIn}>
-            Our <span className="text-[#8CC63F]"> Story</span>  
+              Our <span className="text-[#8CC63F]"> Story</span>
             </motion.h2>
             <motion.p className="text-gray-300 mb-4" variants={fadeIn}>
               Founded in 2020, Innovise began with a simple mission: to help
@@ -246,8 +243,8 @@ export default function AboutUs() {
         </div>
       </section>
 
-{/* Meet Our Founders */}
-{/* <section className="py-20 px-4 bg-[#0d0c11]">
+      {/* Meet Our Founders */}
+      {/* <section className="py-20 px-4 bg-[#0d0c11]">
   <div className="max-w-6xl mx-auto text-center mb-12">
     <h2 className="text-3xl font-bold mb-4">Meet Our Founders</h2>
     <p className="text-gray-300 max-w-2xl mx-auto">
@@ -302,7 +299,7 @@ export default function AboutUs() {
   </div>
 </section> */}
 
-    {/* <section className="relative overflow-hidden">
+      {/* <section className="relative overflow-hidden">
       
       <div className="absolute top-0 left-0 w-full">
         <svg
@@ -395,110 +392,115 @@ export default function AboutUs() {
       </div>
     </section>  */}
 
-     <section id="team" className="relative overflow-hidden">
-      {/* ✅ Top Wave */}
-      <div className="absolute top-0 left-0 w-full z-0">
-        <svg
-          className="w-full h-40"
-          viewBox="0 0 1440 320"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#0d0c11"
-            d="M0,160L60,176C120,192,240,224,360,240C480,256,600,256,720,240C840,224,960,192,1080,181.3C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          />
-        </svg>
-      </div>
-
-      {/* ✅ Content */}
-      <div className="relative bg-black z-10 pt-10 pb-28 px-4">
-        {/* Heading */}
-        <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-3">
-            The <span className="text-[#8CC63F]">Executive</span> Team
-          </h2>
-          <p className="text-gray-400 max-w-xl mx-auto">
-            There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill.
-          </p>
+      <section id="team" className="relative overflow-hidden">
+        {/* ✅ Top Wave */}
+        <div className="absolute top-0 left-0 w-full z-0">
+          <svg
+            className="w-full h-40"
+            viewBox="0 0 1440 320"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#0d0c11"
+              d="M0,160L60,176C120,192,240,224,360,240C480,256,600,256,720,240C840,224,960,192,1080,181.3C1200,171,1320,181,1380,186.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            />
+          </svg>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-          {/* Card 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            whileHover={{ scale: 1.03 }}
-            className="flex items-center bg-[#0d0c11] rounded-2xl shadow-lg hover:shadow-[#8CC63F]/30 p-6 gap-6 transition duration-300"
-          >
-            <Image
-              src="/images/sirhamid.png"
-              alt="Hamid Lagari"
-              width={100}
-              height={100}
-              className="rounded-xl object-cover w-[100px] h-[100px]"
-            />
-            <div className="text-left">
-              <h3 className="text-xl font-semibold text-white">Hamid Laghari</h3>
-              <p className="text-[#8CC63F] font-medium mb-1">Founder & CEO</p>
-              <p className="text-sm text-gray-500 mb-2">
-                Passionate about digital transformation through ServiceNow.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/hamid-laghari-7769801bb/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#8CC63F] transition"
-              >
-                <FaLinkedin size={20} />
-              </a>
-            </div>
-          </motion.div>
+        {/* ✅ Content */}
+        <div className="relative bg-black z-10 pt-10 pb-28 px-4">
+          {/* Heading */}
+          <div className="w-[90%] mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-3">
+              The <span className="text-[#8CC63F]">Executive</span> Team
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">
+              There’s nothing I really wanted to do in life that I wasn’t able
+              to get good at. That’s my skill.
+            </p>
+          </div>
 
-          {/* Card 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ scale: 1.03 }}
-            className="flex items-center bg-[#0d0c11] rounded-2xl shadow-lg hover:shadow-[#8CC63F]/30 p-6 gap-6 transition duration-300"
-          >
-            <Image
-              src="/images/siryahya.png"
-              alt="Muhammad Yahya"
-              width={100}
-              height={100}
-              className="rounded-xl object-cover w-[100px] h-[100px]"
-            />
-            <div className="text-left">
-              <h3 className="text-xl font-semibold text-white">Yahyah Mirza</h3>
-              <p className="text-[#8CC63F] font-medium mb-1">Co-Founder & CTO</p>
-              <p className="text-sm text-gray-500 mb-2">
-                Driving innovation with deep ServiceNow expertise and leadership.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/yahyah-mirza-a2575b295/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-[#8CC63F] transition"
-              >
-                <FaLinkedin size={20} />
-              </a>
-            </div>
-          </motion.div>
+          {/* Cards Grid */}
+          <div className="grid md:grid-cols-2 gap-10 w-[85%] mx-auto">
+            {/* Card 1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.03 }}
+              className="flex items-center bg-[#0d0c11] rounded-2xl shadow-lg hover:shadow-[#8CC63F]/30 p-6 gap-6 transition duration-300"
+            >
+              <Image
+                src="/images/sirhamid.png"
+                alt="Hamid Lagari"
+                width={100}
+                height={100}
+                className="rounded-xl object-cover w-[100px] h-[100px]"
+              />
+              <div className="text-left">
+                <h3 className="text-xl font-semibold text-white">
+                  Hamid Laghari
+                </h3>
+                <p className="text-[#8CC63F] font-medium mb-1">Founder & CEO</p>
+                <p className="text-sm text-gray-500 mb-2">
+                  Passionate about digital transformation through ServiceNow.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/hamid-laghari-7769801bb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-[#8CC63F] transition"
+                >
+                  <FaLinkedin size={20} />
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Card 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ scale: 1.03 }}
+              className="flex items-center bg-[#0d0c11] rounded-2xl shadow-lg hover:shadow-[#8CC63F]/30 p-6 gap-6 transition duration-300"
+            >
+              <Image
+                src="/images/siryahya.png"
+                alt="Muhammad Yahya"
+                width={100}
+                height={100}
+                className="rounded-xl object-cover w-[100px] h-[100px]"
+              />
+              <div className="text-left">
+                <h3 className="text-xl font-semibold text-white">
+                  Yahyah Mirza
+                </h3>
+                <p className="text-[#8CC63F] font-medium mb-1">
+                  Co-Founder & CTO
+                </p>
+                <p className="text-sm text-gray-500 mb-2">
+                  Driving innovation with deep ServiceNow expertise and
+                  leadership.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/yahyah-mirza-a2575b295/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-[#8CC63F] transition"
+                >
+                  <FaLinkedin size={20} />
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
-   
-
-
+      </section>
 
       {/* Our Mission */}
       <section className="py-20 px-4 bg-black">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-[90%] mx-auto">
           <motion.div
             className="text-center mb-16"
             initial="hidden"
@@ -507,7 +509,7 @@ export default function AboutUs() {
             variants={staggerContainer}
           >
             <motion.h2 className="text-3xl font-bold mb-4" variants={fadeIn}>
-             Our <span className="text-[#8CC63F]">  Mission </span>
+              Our <span className="text-[#8CC63F]"> Mission </span>
             </motion.h2>
             <motion.p
               className="text-gray-300 max-w-3xl mx-auto"
@@ -571,7 +573,7 @@ export default function AboutUs() {
 
       {/* Our Services */}
       <section className="py-20 px-4 bg-[#0d0c11]">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-[90%] mx-auto">
           <motion.div
             className="text-center mb-16"
             initial="hidden"
@@ -633,15 +635,13 @@ export default function AboutUs() {
             Let's discuss how our ServiceNow solutions can drive efficiency and
             innovation in your organization.
           </motion.p>
-         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-  <Link href="/contact-us">
-    <button
-      className="px-8 py-3 bg-black text-white font-semibold rounded-full  hover:bg-gray-900 transition-colors"
-    >
-      Contact Us Today
-    </button>
-  </Link>
-</motion.div>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link href="/contact-us">
+              <button className="px-8 py-3 bg-black text-white font-semibold rounded-full  hover:bg-gray-900 transition-colors">
+                Contact Us Today
+              </button>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
@@ -649,4 +649,3 @@ export default function AboutUs() {
     </div>
   );
 }
-

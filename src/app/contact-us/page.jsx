@@ -274,7 +274,7 @@ export default function ContactUs() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[70vh] px-6 flex items-center justify-center bg-black pt-[100px] sm:pt-0 overflow-hidden">
+      <section className="relative h-[600px] px-6 flex items-center justify-center bg-black pt-[100px] sm:pt-0 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
           <GradientBackground />
         </div>
@@ -291,7 +291,7 @@ export default function ContactUs() {
         </div>
       </section>
 
-        <section className="bg-black py-12 px-4 text-center">
+      <section className="bg-black py-12 px-4 text-center">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-white">
           <div className="flex flex-col items-center">
             <MapPin className="text-[#8CC63F] mb-2" size={32} />

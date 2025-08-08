@@ -33,8 +33,10 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="bg-black py-20 text-white">
-      <div className="max-w-5xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-[#8CC63F] mb-4">Success Stories</h2>
+      <div className="w-[85%] mx-auto px-4 text-center">
+        <h2 className="text-4xl font-bold text-[#8CC63F] mb-4">
+          Success Stories
+        </h2>
         <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
           Real impact from our clients — hear it from them!
         </p>
@@ -49,7 +51,7 @@ export default function Testimonials() {
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-[#101010] border border-[#8CC63F]/20 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-[0_0_15px_#8CC63F] transition duration-300 hover:scale-105 max-w-xl mx-auto">
+              <div className="bg-[#101010] border border-[#8CC63F]/20 p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-[0_0_15px_#8CC63F] transition duration-300 hover:scale-105 w-[60%] mx-auto">
                 <div className="w-20 h-20 mx-auto mb-4">
                   <img
                     src={item.image}
@@ -62,10 +64,16 @@ export default function Testimonials() {
                 </h3>
                 <div className="flex justify-center gap-1 mb-2">
                   {[...Array(item.rating)].map((_, i) => (
-                    <Star key={i} size={18} className="text-yellow-400 fill-yellow-400" />
+                    <Star
+                      key={i}
+                      size={18}
+                      className="text-yellow-400 fill-yellow-400"
+                    />
                   ))}
                 </div>
-                <p className="text-sm text-gray-400 text-center">{item.review}</p>
+                <p className="text-sm text-gray-400 text-center">
+                  {item.review}
+                </p>
               </div>
             </SwiperSlide>
           ))}
