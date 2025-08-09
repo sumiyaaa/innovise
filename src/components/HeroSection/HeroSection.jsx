@@ -135,6 +135,7 @@ export default function HeroSection() {
     <GradientBackground>
       <section className="relative h-[700px] flex items-center justify-center px-4">
         <div className="max-w-4xl w-full text-center z-10">
+     
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -170,6 +171,12 @@ export default function HeroSection() {
               help businesses streamline workflows, automate operations, and
               grow smarter.
             </motion.p>
+            <div
+    className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-60 z-0"
+    style={{
+      background: "radial-gradient(circle, rgba(140,198,63,0.4) 0%, transparent 70%)",
+    }}
+  ></div>
 
             <Link href="/about-us">
               <motion.button

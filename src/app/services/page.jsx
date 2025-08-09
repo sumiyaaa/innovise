@@ -109,9 +109,15 @@ const ServicesPage = () => {
       {/* ✅ Hero Section */}
       <section className="relative min-h-screen px-6 bg-black flex items-center justify-center overflow-hidden pt-[100px] sm:pt-0">
         {/* ✅ Background Gradient */}
-        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
-          <GradientBackground />
+        <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+          <GradientBackground  mode="layer"/>
         </div>
+        <div
+    className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-60 z-0"
+    style={{
+      background: "radial-gradient(circle, rgba(140,198,63,0.4) 0%, transparent 70%)",
+    }}
+  ></div>
 
         {/* ✅ Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 backdrop-blur-sm">
