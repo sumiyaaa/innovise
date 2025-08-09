@@ -69,12 +69,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
           <GradientBackground mode="layer" />
         </div>
-        <div
-    className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-60 z-0"
-    style={{
-      background: "radial-gradient(circle, rgba(140,198,63,0.4) 0%, transparent 70%)",
-    }}
-  ></div>
+       
         {/* <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/gradient-mesh.svg')] bg-cover bg-center animate-pulse-slow"></div>
         </div> */}
