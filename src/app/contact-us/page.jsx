@@ -280,12 +280,12 @@ export default function ContactUs() {
         <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
            <GradientBackground mode="layer" />
         </div>  
-   <div
+   {/* <div
     className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-60 z-0"
     style={{
       background: "radial-gradient(circle, rgba(140,198,63,0.4) 0%, transparent 70%)",
     }}
-  ></div>
+  ></div> */}
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4 backdrop-blur-sm">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
